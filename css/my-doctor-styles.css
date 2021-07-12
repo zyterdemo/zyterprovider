@@ -1,0 +1,78 @@
+.my-doctor-area{
+    background: #ffffff;
+    margin: 5px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    position: relative;
+}
+.my-doctor-header{
+    display: flex;
+    justify-content: space-between;
+}
+.my-doctor-header h2{
+    color: #3E3E3E;
+    padding: 5px 15px;
+    border-left: 4px solid #4193CE;
+    font-size: 16px;
+}
+.my-doctor-image{
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    width: 220px;
+    margin: 0 auto;
+}
+.my-doctor-image img{
+    width: 100%;
+}
+
+.my-doctor-text{
+    margin: 5px 0 25px 0;
+}
+
+.my-doctor-contact-links{
+    margin: 5px 0;
+}
+.my-doctor-contact-links a{
+    background: url(../images/contact-icons-sprite.png) no-repeat;
+    display: inline-block;
+    margin-right: 10px;
+    background-size: 134px 24px;
+    height: 24px; 
+}
+.my-doctor-contact-links .md-message{
+    background-position: -3px 0;
+    width: 25px;   
+}
+.my-doctor-contact-links .md-phone{
+    background-position: -53px 0;
+    width: 29px;   
+}
+.my-doctor-contact-links .md-video{
+    background-position: -105px 0;
+    width: 25px;   
+}
+.mdc-area{
+    position: relative;
+}
+.my-doctor-btns{
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    right: 20px;
+    bottom: 5vh;
+}
+.my-doctor-btns .btn{
+    margin-left: 15px;
+}
+.map-area{
+    width: 100%;
+    height: 300px;
+    margin: 15px 0;
+}
+.map-area img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

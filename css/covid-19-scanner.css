@@ -1,0 +1,102 @@
+
+.covid-19-screen-area{
+    padding: 15px;
+    max-width: 760px;
+    margin: 15px auto;
+    background: #e5eeff;
+    border-radius: 5px;
+    line-height: 24px;
+}
+.covid-19-screen-area h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.covid-19-screen-area section h3{
+    font-size: 1.3rem;
+}
+.covid-19-screen-area p{
+    line-height: 24px;
+    font-size: 1.2rem;
+}
+.covid-19-screen-area small{
+    font-size: 1rem;
+}
+.covid-19-screen-area ol li, 
+.covid-19-screen-area ul li{
+    font-size: 1.2rem;
+}
+.covid-19-screen-area footer{
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.covid-19-screen-area .btn{
+    margin-left: 15px;
+}
+.covid-test-1{
+    display: flex;
+    justify-content: space-between;
+}
+.covid-carea{
+    padding: 5px;
+    max-width: 48%;
+}
+.covid-checks-area{
+    padding: 5px;
+}
+.covid-checks-area .form-check{
+    padding-left: 17px;
+}
+.covid-checks-area .form-check-inline{
+    position: relative;
+    padding-left: 17px;
+}
+.covid-checks-area .form-check-label{
+    font-size: 1.1rem;
+}
+.covid-checks-area .form-check-input{
+    top: 5px;
+    margin: 0;
+    left: 0;
+    position: absolute;
+}
+
+.covid-checks-area.covid-checks-inline{
+    width: 250px;
+}
+.covid-final-screen{
+    padding: 0;
+}
+.your-responses p{
+    font-weight: 700;
+}
+.your-responses span{
+    font-weight: 400;
+    display: block;
+    position: relative;
+    padding-left: 15px;
+}
+.your-responses span::before{
+    content: '.';
+    font-size: 30px;
+    color: #0367e9;
+    font-weight: bold;
+    display: inline;
+    padding: 0;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+}
+
+#checkboxError1{
+    display: none;
+}
+#checkboxError2{
+    display: none;
+}
+#checkboxError3{
+    display: none;
+}
+#checkboxError4{
+    display: none;
+}

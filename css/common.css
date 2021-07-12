@@ -1,0 +1,237 @@
+
+html, body, a, i, span, div, table, tr, th, td, input, select, button, form, header, footer, main, section, nav{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #535353;
+	font-size: 12px;
+}
+body{	
+	background-color: #F5FBFF;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 250px;
+}
+p{
+	margin: 0;
+}
+a, a .fa, .fas{
+	cursor: pointer;
+}
+ul{
+	list-style-type: none;
+}
+input, button, a, img{
+	outline: none;
+}
+progress{
+	width: 100%;
+}
+a.btn.btn-primary{
+	color: #ffffff;
+}
+.main-header-navbar{
+	background: #002C77;
+	color: #ffffff;
+	min-height: 70px;
+}
+.main-logo{
+	display: inline-block;
+	width: 130px;
+	height: 33px;
+	background: url("https://someshmca.github.io/zyterhealth/images/logo.png") no-repeat;
+	cursor: pointer;
+	margin-right: 40px;
+}
+.welcome-user{
+	position: absolute;
+	right: 25px;
+	top: 8px;
+	color: #ffffff;
+	font-size: 12px;
+}
+.welcome-user span{
+	color: #ffffff;
+}
+.main-header-navbar li{
+	margin: 0 7.5px;
+}
+.main-header-navbar li, .main-header-navbar a, .main-header-navbar .fa{
+	color: #ffffff;
+}
+.main-header-navbar .navbar-nav .nav-link{
+	font-size: 14px;
+}
+#headerUserDrop{
+	color: #ffffff;
+}
+.main-header-navbar .dropdown-menu a{
+	color: #555555;
+	font-size: 14px;
+}
+.main-header-navbar .nav-flex-icons{
+	margin-top: 15px;
+}
+.cm-header{
+    display: flex;
+    justify-content: space-between;
+}
+.cm-header h2{
+    color: #3E3E3E;
+    padding: 5px 15px;
+    border-left: 4px solid #4193CE;
+    font-size: 16px;
+}
+.navigate-btn{
+    background: url("https://someshmca.github.io/zyterhealth/images/navigate-icon.png") 3px 6px no-repeat;
+    padding-left: 23px;
+    background-size: 15px auto;
+    border: 0px solid transparent;
+}
+.btn.btn-outline-primary.navigate-btn:hover{
+	color: #007bff;
+    background-color: #fff;
+    border-color: transparent;
+}
+.navigate-btn:hover{
+    color: #007bff;
+}
+.imp-links-area{
+	box-shadow: 0px 0px 6px #00000015;
+	border-radius: 5px;
+	background: #ffffff;
+	margin-top: 5px;
+	padding-bottom: 10px;
+}
+ .imp-links-area h2{
+	border-left: 4px solid #0078D3;
+	color: #797979;
+	font-size: 18px;
+	padding: 5px 15px;
+}
+.imp-links-area ul{
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+.imp-links-area ul li{
+	margin-bottom: 8px;
+}
+.imp-links-area ul li, .imp-links-area li a{
+	font-size: 13px;
+	color: #0078D3;
+}
+.ad-image-wrap{
+	height: 250px;
+	padding-bottom: 5px;
+}
+.ad-image-wrap img{
+	max-width: 100%;
+}
+
+
+.main-footer{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.footer-links-area{
+	padding: 15px 20px;
+	background:#525557;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+.footer-links-area .links-box{
+	margin: 0 15px 0 0;
+}
+.footer-links-area .links-box ul{
+	margin: 0;
+	padding: 0;
+}
+.footer-links-area .links-box ul li,
+.footer-links-area .links-box ul li a{
+	font-size: 12px;
+	color: #ffffff;
+}
+.footer-links-area .links-box ul li:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.footer-subscribe-box{
+	margin: 0;
+	font-size: 13px;
+	color: #ffffff;
+	max-width: 200px;
+}
+.footer-subscribe-box label{
+	color: #ffffff;
+}
+.footer-subscribe-box h5{
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: 700;
+}
+.footer-subscribe-box .form-control{
+	border-radius: 5px;
+}
+.footer-subscribe-box .btn.btn-warning{
+	background: #FED831;
+	max-width: 169px;
+	color: #2B2B2B ;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Helvetica;;
+}
+.footer-copyright-area{
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	font-size: 12px;
+	align-items: center;
+	background: #ffffff;
+	color: #939393;
+}
+.copyright-links-area a{
+	margin: 0 4px;
+	color: #939393;
+}
+.copyright-links-area a:last-child{
+	margin-right: 0;
+}
+.contact-member-services{
+	padding: 2px 0;
+}
+.contact-member-services a{
+	color: #0078D3 !important;
+	cursor: pointer;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.playstore-links{
+	clear: both;
+	display: flex;
+	padding: 5px;
+	justify-content: center;
+}
+.playstore-links.main-footer-bg{
+	background:#525557;
+}
+.playstore-links a{
+	display: inline-block;
+    cursor: pointer;
+    padding: 0;
+    margin: 3px 6px;
+	position: relative;
+	width: 128px;
+	height: 40px;
+}
+
+.playstore-links a.appleicon{
+	background: url("https://someshmca.github.io/zyterhealth/images/apple-store.png") 0 0 no-repeat;
+	background-size: 128px 40px;
+}	
+.playstore-links a.gplayicon{
+	background: url("https://someshmca.github.io/zyterhealth/images/google-play-store.png") 0 0 no-repeat;
+	background-size: 128px 40px;
+}	

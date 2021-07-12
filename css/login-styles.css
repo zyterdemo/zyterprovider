@@ -1,0 +1,176 @@
+
+body{
+    padding-bottom: 96px;
+    position: relative;
+}
+.login-container{
+    background: url("https://someshmca.github.io/zyterhealth/images/login/login-page-bg.png") 0 0 no-repeat;
+    background-size: cover;
+    height: calc(100vh - 96px);
+    width: 100%;
+}
+.login-container a{
+    color: #0078D3;
+}
+.login-main-row{
+    height: 100vh;
+}
+.login-links-area{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100vh - 96px);
+    width: 100%;
+}
+.login-links{
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.81);
+    width: 600px;
+    margin: 20px;
+}
+.login-links h2{
+    color: #2B2B2B;
+    font-size: 1.4rem;
+}
+.login-links ul{
+    margin: 0;
+    padding: 0;
+}
+.login-links ul li{
+    color: #1388BC;
+    position: relative;
+    padding: 5px 10px 5px 25px;
+    margin: 0 0 5px 0;
+}
+.login-links ul li::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("https://someshmca.github.io/zyterhealth/images/login/tick.png") 0 0 no-repeat;
+    background-size: 20px 20px;
+    top: 5px;
+    left: 0;
+}
+.login-form-area{
+    padding: 5px 20px;
+    background: rgba(255, 255, 255, 0.92);
+    height: calc(100vh - 96px);
+    position: relative;
+}
+.login-form-logo{
+    text-align: center;
+    margin: 5px 0;
+}
+.login-form-logo img{
+    max-width: 180px;
+}
+.login-form-area h4{
+    text-align: center;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 0;
+    font-weight: 600;
+}
+.login-form-area h5{
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 0;
+}
+.login-form{
+    margin: 5px 0 5px 0;
+}
+.login-form .form-group{
+    margin-bottom: 10px;
+}
+.login-form .form-group label{
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.login-form .form-group .form-control{
+    font-size: 13px;
+    height: 35px;
+}
+.login-form .signup-btn{
+    width: 100%;
+    color: #ffffff;
+}
+.login-form .custom-control-label{
+    font-size: 13px;
+}
+.agree-text{
+    margin: 5px auto;
+    text-align: center;
+    width: 90%;
+   /* margin: 25px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 200px;
+    */
+}
+.agree-text p{
+    font-size: 11px;
+}
+.hc-click-area{
+    max-width: 200px;
+    display: flex;
+    margin: 5px auto;
+}
+.hc-image{
+    width: 43px;
+    height: 43px;
+}
+.hc-image img{
+    width: 35px;
+    height: 35px;
+}
+.hc-content{
+    padding: 0;
+}
+.hc-content p{
+    font-size: 12px;
+    padding: 2px;
+    margin: 0;
+    text-align: left;
+    line-height: normal;
+}
+.hc-content a{
+    font-size: 12px;
+    color: #1388BC;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.login-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+}
+.forgot-success{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 4vh 15px;
+   margin-bottom: 5vh;
+}
+.forgot-success h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 15px 25px 15px;
+    color: #008000;
+}
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+a{
+    color: #0078D3;
+    cursor: pointer;
+}
+.flex-sb span{
+    color: #0078D3;
+    cursor: pointer;
+}

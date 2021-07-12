@@ -1,0 +1,105 @@
+.fp-area{
+    background: #ffffff;
+    margin: 5px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    position: relative;
+}
+.fp-header{
+    display: flex;
+    justify-content: space-between;
+}
+.fp-header h2{
+    color: #3E3E3E;
+    padding: 5px 15px;
+    border-left: 4px solid #4193CE;
+    font-size: 16px;
+}
+.doctor-search{
+    margin: 5px 20px;
+    position: relative;
+}
+.fd-box{
+    background: #ffffff;
+    margin: 4px auto;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(226, 226, 226,0.8);
+    width: 190px;
+}
+.doctor-search .fa-search{
+    color: rgba(119, 136, 153, 0.4);
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+}
+.fp-list{
+    margin: 5px auto;
+    padding: 0;
+}
+.fp-list-item{
+    background: #ffffff;
+    margin: 4px 25px 15px 25px;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(226, 226, 226,0.8);
+    display: grid;
+    grid-template-columns: auto 150px;
+    height: 130px;
+}
+@media (min-width: 576px){
+    .fp-list-item{
+        grid-template-columns: auto 150px;
+    }
+}
+@media (min-width: 768px){
+    .fp-list-item{
+        grid-template-columns: auto 200px;
+    }
+}
+@media (min-width: 992px){
+    .fp-list-item{
+        grid-template-columns: auto 300px;
+    }
+}
+.fp-list-content{
+    padding: 5px 15px;
+}
+.fp-list-content h2{
+    background: url("../images/pharma.png") 0 2px no-repeat;
+    background-size: 25px 25px;
+    padding: 6px 10px 0 32px;
+    color: #525252;
+    font-size: 17px;
+    height: 30px;
+}
+.fp-details{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fp-text{
+    margin: 5px 0;
+    text-align: left;
+}
+.fp-text small{
+    font-size: 12px;
+}
+.fp-text p, .fp-text a{
+    font-size: 12px;
+    font-size: bold;
+}
+.fp-text a{
+    color: #1388BC;
+}
+.fp-list-image{
+    margin: 0;
+}
+.fp-list-image img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: top;
+}

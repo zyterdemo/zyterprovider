@@ -1,0 +1,70 @@
+.nal-modal{
+    margin: 0;
+}
+.nal-modal .modal-dialog{
+    max-width: 350px;
+}
+.nal-modal .modal-header{
+    background-color: #4b0082;
+    color: #ffffff;
+}
+.nal-modal .modal-header h2{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.nal-modal .modal-header .close{
+    color: #ffffff;
+}
+.nal-content{
+    padding: 5px;
+}
+h1.nal-helpline{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+.nal-content>h4{
+    margin: 2px 0;
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.nal-content>p{
+    margin: 2px 0; 
+    text-align: left;
+    font-size: 12px;
+}
+.nal-content>fieldset{
+    margin: 5px 0;
+}
+.nal-content>legend{
+    font-size: 1rem;
+}
+.nal-content>fieldset .form-control{
+    margin: 5px;
+}
+.nal-qa{
+    margin: 5px;
+}
+.nal-qa h2{
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.nal-qa ul{
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: disc;
+}
+.nal-qa ul li{
+    font-size: 12px;
+    margin: 3px 0;
+    padding: 0;
+    text-align: left;
+}
