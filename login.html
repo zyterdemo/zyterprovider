@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health :: Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login-styles.css">
+  <link rel="stylesheet" href="css/nurse-advice-line.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom-login.js"></script>
+</head>
+<body>
+    <div class="container-fluid login-container">
+        <div class="row login-main-row">
+            <div class="col-lg-8 col-md-7 col-sm-6 col-12">
+                <div class="login-links-area">
+                    <div class="login-links">
+                        <h2>Manage your health care online with ZyterHealth</h2>
+                        <ul>
+                            <li>Check member eligiblity</li>
+                            <li>Submit and check status of claims</li>
+                            <li>Submit and check status of authorizations</li>
+                            <li>View your HEDIS scores</li>
+                            <li>View member roster</li>
+                            <li>Manage your account</li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 col-12">
+                <div class="login-form-area">
+                    <div class="login-form-logo">
+                        <img src="https://someshmca.github.io/zyterhealth/images/login/logo.png"/>
+                    </div>
+                    <div id="loginArea">
+                        <h4>Sign In</h4>
+                        <h5>New User?
+                            <a href="#" onclick="registerHere()">Register</a>
+                        </h5>
+                        <div class="login-form">
+                            <div class="form-group">
+                                <label>
+                                Username
+                                </label>
+                                <input type="text" class="form-control" name="fullname" value="Robert"/>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters" value="Robert123"/>
+                            </div>                        
+                            <div class="custom-control custom-checkbox mb-3">
+                                <input type="checkbox" class="custom-control-input" id="customCheck" name="emailupdates">
+                                <label class="custom-control-label" for="customCheck">
+                                    Sign up for email updates.
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <a type="button" class="btn btn-primary signup-btn" href="index.html">
+                                    Sign In
+                                </a>   
+                            </div>
+                            <div class="flex-sb">
+                                <span onclick="forgotPassword('forgotPwdStates')">Forgot Password?</span>
+                                <span onclick="forgotUsername('forgotUserStates')">Forgot Username?</span>
+                            </div>
+                        </div>
+                        <div class="contact-member-services">
+                            <a class="btn btn-light" data-target="#contactMemberServices" data-toggle="modal">
+                                Contact Member Services
+                            </a>
+                        </div>
+                        <div class="agree-text">
+                            <p>
+                                By continuing, you agree to accept our Privacy Policy &amp; Terms of Service.
+                            </p>
+                        </div>
+                </div> <!-- end of loginArea-->
+                <div id="registerArea">
+                    <h4>Sign Up</h4>
+                    <h5>Already have an account?
+                        <a href="#" onclick="backToLogin()">Login</a>
+                    </h5>
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>
+                                Full Name
+                            </label>
+                            <input type="text" class="form-control" name="fullname"/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input type="text" class="form-control" name="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Password
+                            </label>
+                            <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters"/>
+                        </div>                        
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="emailupdates">
+                            <label class="custom-control-label" for="customCheck">
+                                Sign up for email updates.
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary signup-btn">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                    <div class="agree-text">
+                        <p>
+                            By continuing, you agree to accept our Privacy Policy &amp; Terms of Service.
+                        </p>
+                    </div>
+                </div> <!-- end of registerArea-->
+                <div id="forgotPasswordArea">
+                    <h4>Forgot Password?</h4>
+                    <h5>Please enter your email address registered with us</a>
+                    </h5>
+                
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>
+                               Email ID
+                            </label>
+                            <input type="text" class="form-control" name="emailId" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Date of Birth
+                            </label>
+                            <input type="date" class="form-control" name="dob"  value=""/>
+                        </div> 
+                        <div class="form-group">
+                            <label>
+                                State
+                            </label>
+                            <select class="form-control" name="state" id="forgotPwdStates" onchange="selectStateUS(this.value)">  
+                            </select>
+                        </div>     
+                        <div class="form-group">
+                            <a type="button" class="btn btn-primary signup-btn"  onclick="forgotPwdSuccess()">
+                                Send
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                <div id="forgotPwdSuccess" class="forgot-success">
+                    <div class="container-fluid text-center">
+                        <h3>Your password has been mailed to the email address registered with us</h3>
+                        <a type="button" class="btn btn-primary" onclick="backToLogin()">
+                            Back to Login
+                        </a>
+                    </div>
+                </div>
+                <div id="forgotUsernameArea">
+                    <h4>Forgot Username?</h4>
+                    <h5>Please enter your email address registered with us</a>
+                    </h5>
+                
+                    <div class="login-form">
+                        <div class="form-group">
+                            <label>
+                               Email ID
+                            </label>
+                            <input type="text" class="form-control" name="emailId" value=""/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Date of Birth
+                            </label>
+                            <input type="date" class="form-control" name="dob"  value=""/>
+                        </div> 
+                        <div class="form-group">
+                            <label>
+                                State
+                            </label>
+                            <select class="form-control" name="state" id="forgotUserStates" onchange="selectStateUS(this.value)">  
+                            </select>
+                        </div>     
+                        <div class="form-group">
+                            <a type="button" class="btn btn-primary signup-btn" onclick="forgotUserSuccess()" >
+                                Send
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+                <div id="forgotUsernameSuccess" class="forgot-success">
+                    <div class="container-fluid text-center">
+                        <h3>Your Username has been mailed to the email address registered with us</h3>
+                        <a type="button" class="btn btn-primary" onclick="backToLogin()">
+                            Back to Login
+                        </a>
+                    </div>
+                </div>
+                    <!-- hc stannds for healthcare -->
+                    <div class="hc-click-area"> 
+                        <div class="hc-image">
+                            <img src="https://someshmca.github.io/zyterhealth/images/login/professional.png"/>
+                        </div>
+                        <div class="hc-content">
+                            <p>Healthcare Professional</p>
+                            <p>
+                                <a href="#">Click here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="playstore-links">
+                        <a href="#" class="appleicon"></a>
+                        <a href="#" class="gplayicon"></a>
+                    </div>  
+                    <div class="footer-copyright-area login-footer">
+                      <div class="copyright-text">
+                        Copyright &copy; 2020 Zyter&reg; Inc
+                      </div>
+                      <div class="copyright-links-area">
+                        <a href="#">Terms &amp; Conditions</a>|
+                        <a href="#">Privacy Policy</a>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <footer class="container-fluid main-footer">    
+    <div class="playstore-links main-footer-bg">
+        <a href="#" class="appleicon"></a>
+        <a href="#" class="gplayicon"></a>
+    </div>  
+    <div class="footer-copyright-area">
+      <div class="copyright-text">
+        Copyright &copy; 2020 Zyter&reg; Inc
+      </div>
+      <div class="copyright-links-area">
+        <a href="#">Terms &amp; Conditions</a>|
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+</footer>
+    <div class="modal fade text-center nal-modal" id="contactMemberServices">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            
+            <div class="modal-header">
+              <h2>Contact Member Services</h2>
+              <button type="button" class="close" data-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+              <div class="nal-content">
+                <h1 class="nal-helpline">
+                  For emergency call 611
+                </h1>
+                <h4 class="text-primary">
+                  24 hours Nurse Advice Line
+                </h4>
+                <p>
+                  Highly trained nurses are available 24 hours a day, 7 days a week. They can speak with you in your language. They will help you to get the care you need. 
+                </p>
+                <fieldset>
+                  <legend>Select a State</legend>
+                  <select  class="form-control" id="nurseSelectUS" onchange="selectStateUS(this.value)">
+                  </select>
+                </fieldset>
+                <div class="text-right my-2">
+                  <h5 class="text-secondary">
+                    Call 711
+                  </h5>
+                </div>
+                <div class="form-group">
+                  <h5 class="text-dark" id="statePhoneNo">
+                    Call (888) 665-4601
+                  </h5>
+                </div>
+                <hr/>
+                <div class="nal-qa">
+                  <h2 class="text-primary">
+                    When should members goto an Urgent Care Center(UCC)?
+                  </h2>
+                  <p>Use a UCC for a non-life threatening condition sucn a: </p>
+                  <ul>
+                    <li>Sore throat, Cough or runny nose</li>
+                    <li>Muscle Strains/Sprains</li>
+                    <li>Minor Outs/Burns</li>
+                    <li>Earache</li>
+                    <li>Flashes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./js/custom-zyter.js"></script>
+</body>
+</html>

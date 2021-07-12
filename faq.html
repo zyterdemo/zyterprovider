@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health - FAQ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/book-appointment.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common-sections.js"></script>
+</head>
+<body>
+
+<header id="mainHeader"> </header>
+  
+<div class="container-fluid main-content-body">
+  <div class="row">
+    <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+        <div class="faq-area">
+            <div class="faq-header">
+                <h2>FAQ</h2>
+            </div>
+            <div class="faq-content">
+            <p>
+                <strong>How do I reset my password?</strong><br/>
+                If you've forgotten your password, you can reset it online. In most cases, we will send you a one-time passcode to the email address we have on file for you. Please don't close the page where we prompt you to enter the passcode or you'll need to start the process again. Keep the page open and check your email in another browser window.
+            </p>
+            <p>
+                <strong>Why does my new password keep getting rejected?</strong>
+                <br/>
+                Password must:
+                <ul>
+                    <li>Be between 8 and 50 characters.</li>
+                    <li>Contain at least one letter.</li>
+                    <li>
+                        Contain one number or special character (!, @, #, etc.).
+                    </li>
+                </ul>
+                Your password cannot contain your user ID and should not contain:
+                <ul>
+                    <li>Your birth date.</li>
+                    <li>Your Health/Medical Record number.</li>
+                    <li>Your telephone number.</li>
+                    <li>Your first or last name.</li>
+                    <li>4 or more numbers or letters in a row (for example, 1234 or abcd).</li>
+                    <li>The same character repeated more than 3 times in a row (for example, aaaa or 2222).</li>
+                </ul>
+            </p>
+            <p>
+                <strong>Why is my account locked after repeated sign-in attempts?</strong><br/>
+                To protect your personal health information, your account is locked after 5 incorrect tries. If you are locked out, please reset your password.
+            </p>
+            <p>
+                <strong>I have questions about my plan or benefits. Who do I contact?</strong><br/>
+                Please call the Member Services number on the back of your Identification card Monday-Friday, 7 a.m. to 7 p.m
+            </p>
+            <p>
+                <strong>What are my options to pay my monthly premium?</strong><br/>
+                For members who buy their medical health plans through us, we offer a variety of payment options. Visit the Payment Options page for more details.
+            </p>
+            <p>
+                <strong>How do I order new or additional ID cards?</strong>
+                ID cards can be printed and ordered through ID Card section on the Member Portal. You can choose to Download, Print or have a physical ID card sent to your mailing address. Members can also contact Member Services.
+                <br/><br/>
+            </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+      <div id="mainRightSection"></div>       
+    </div>
+  </div>
+</div>
+  <footer class="container-fluid main-footer" id="mainFooter">
+  </footer>
+  <div class="modal fade text-center" id="bookAppointment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header cm-header">
+          <h2>Book an Appointment</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="booking-form">
+            <div id="bookingFormArea">
+                  <div class="form-group">
+                      <span class="form-label">Appointment with</span>
+                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Date</span>
+                          <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Time</span>
+                          <input class="form-control" type="time" placeholder="Mobile Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                      <button class="submit-btn" id="bookAppointmentBtn">
+                      Book an Appointment</button>
+                  </div>
+            </div> <!-- end of bookingFormArea-->
+            <div id="bookingSuccess">
+                <h2>Your Appointment is confirmed</h2>
+            </div>
+          </div> <!-- end of booking-form div -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){
+      $("#bookingSuccess").hide();
+      $("#bookAppointmentBtn").click(function(){
+        $("#bookingFormArea").hide(100);
+        $("#bookingSuccess").show(100);
+      });
+    })
+  </script>
+</body>
+</html>

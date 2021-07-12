@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health - Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile-page-styles.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common-sections.js"></script>
+</head>
+<body>
+  <header id="mainHeader"> </header>
+<div class="container-fluid main-content-body homepage-body">
+    <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                  <div class="profile-about-area">
+                      <div class="profile-avatar-area">
+                          <div class="profile-avatar-bg"></div>
+                          <div class="profile-avatar">
+                              <h5>Robert Williams</h5>
+                              <img src="./images/profile1.png"/>
+                          </div>
+                      </div>
+                      <p>Email ID <br/>robert.williams@info.com</p>
+                      <p>Mobile <br/>+1 123 456 7893</p>
+                      <p>Home Phone <br/>+1 240 456 5321</p>
+                      <div class="profile-address-area">
+                          <p>Address <br/>
+                              85 Bay Drive, New Port Richey, FL 34653
+                          </p>
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Personal</div>
+                              <div class="pcol">
+                                  <span>80%</span> Completed
+                                  <progress max="100" value="80"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Emergency Contact</div>
+                              <div class="pcol">
+                                  <span>50%</span> Completed
+                                  <progress max="100" value="50"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                      <div class="profile-percent">
+                          <div class="prow">
+                              <div class="pcol">Health Record</div>
+                              <div class="pcol">
+                                  <span>50%</span> Completed
+                                  <progress max="100" value="50"></progress>
+                              </div>
+                          </div>                
+                      </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8 col-12">
+                    <div class="profile-details-container">
+                        <div class="profile-details-header">
+                            <h2>My Profile</h2>
+                            <div class="percent-completed">
+                                <p><span>42%</span> Completed</p>
+                                <progress max="100" value="42"></progress>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#personal">Personal</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#emergencyContact">
+                                Emergency Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#symptoms">
+                                Symptoms</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#medication">
+                              Medication</a>
+                          </li>
+                        </ul>
+                      
+                        <!-- Tab panes -->
+                        <div class="tab-content profile-tab-content">
+                          <div id="personal" class="container tab-pane active"><br>
+                            <h3>Personal</h3>
+                            <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-12">                          
+                                  <div class="form-group">
+                                      <label for="firstName">First Name:</label>
+                                      <input type="text" class="form-control" id="firstName" Value="Robert" name="fname">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="memberIdNo">Member ID No:</label>
+                                      <input type="text" class="form-control" id="memberIdNo" value="34523546635345" name="memberid">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="gender">Gender:</label>
+                                      <input type="text" class="form-control" id="gender" value="Male" name="gender">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="weight">Weight:</label>
+                                      <input type="text" class="form-control" id="weight" value="120Lbs" name="weight">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="dfdfdf">Email:</label>
+                                      <input type="email" class="form-control" id="email" value="mike@info.com" name="email">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="address1">Address 1:</label>
+                                      <input type="text" class="form-control" id="address1" value="85 Bay Drive" name="address1">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="city">City:</label>
+                                      <input type="text" class="form-control" id="city" value="85 Bay Drive" name="city">
+                                  </div>
+                              </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12">                       
+                                  <div class="form-group">
+                                      <label for="lastName">Last Name:</label>
+                                      <input type="text" class="form-control" id="lastName" value="Williams" name="lname">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="age">DOB / Age:</label>
+                                      <input type="text" class="form-control" id="age" value="34 years" name="age">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="height">Height:</label>
+                                      <input type="text" class="form-control" id="height" value="5.5''" name="height">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="skinType">Skin Type:</label>
+                                      <input type="text" class="form-control" id="skinType" value="Whte" name="skintype">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="mobile">Mobile:</label>
+                                      <input type="text" class="form-control" id="mobile" value="+1 (123) 456 7893" name="mobile">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="address2">Address 2:</label>
+                                      <input type="text" class="form-control" id="address2" value="New Port Richey" name="address2">
+                                  </div>                        
+                                  <div class="form-group">
+                                      <label for="state">State:</label>
+                                      <input type="text" class="form-control" id="state" value="state" name="state">
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="personal-btns">
+                                <button class="btn btn-secondary" type="button">
+                                    Cancel
+                                </button>
+                                <button class="btn btn-primary" type="button">
+                                    Update
+                                </button>
+                            </div>
+                          </div>
+                          <div id="emergencyContact" class="container tab-pane fade"><br>
+                            <h3>Emergency Contact</h3>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </div>
+                          <div id="symptoms" class="container tab-pane fade"><br>
+                            <h3>Symptoms</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                          </div>
+                          <div id="medication" class="container tab-pane fade"><br>
+                            <h3>Medication</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+          <div id="mainRightSection"></div>        
+        </div>
+    </div>
+</div>
+<footer class="container-fluid main-footer" id="mainFooter">  
+</footer>
+
+</body>
+</html>

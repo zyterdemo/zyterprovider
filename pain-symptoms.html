@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health - Pain Symptoms</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/symptom-checker.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/stepper-custom.js"></script>
+  <script src="js/common-sections.js"></script>
+</head>
+<body>
+
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
+  <a class="navbar-brand main-logo" href="index.html"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1"
+    aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="mainHeaderMenu1">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="my-claims.html">My Claims</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="my-doctor.html">My Doctor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="member-id-card.html">Member ID Card</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="health-record.html">Health Record</a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Available Services</a> -->
+        <a class="nav-link" href="symptom-checker.html">Symptom Checker</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" href="#">Health Education</a> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bill-payments.html">Bill Payments</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fas fa-bell"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="headerUserDrop" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+          aria-labelledby="headerUserDrop">
+          <a class="dropdown-item" href="profile.html">My Account</a>
+          <a class="dropdown-item" href="login.html">Logout</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--/.Navbar -->
+  
+<div class="container-fluid main-content-body homepage-body">
+    <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            
+            <div class="sc-container">
+                <div class="sc-header">
+                    <h2>Pain Symptoms</h2>
+                </div>
+                <div class="stepper-area">
+                    <div class="arrow-steps clearfix">
+                        <div class="step current"> 
+                            <span>Step 1: Choose a symptom</span>
+                        </div>
+                        <div class="step"> <span>Step 2: Select related factors</span> </div>
+                        <div class="step"> <span> Step 3: View possible causes</span> </div>
+                    </div>
+                    <!-- <div class="sc-nav clearfix">
+                        <a href="#" class="prev">Previous</a>
+                        <a href="#" class="next pull-right">Next</a>
+                    </div>     -->
+                    <div class="sc-steps-content">
+                        <h5>Knee pain</h5>
+                        <p>Find possible causes of knee pain based on specific factors. Check one or more factors on this page that apply to your symptom.</p>
+                        <h5>Pain best described as</h5>
+                    </div>
+                </div>          
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+            <div class="imp-links-area">
+              <h2>Important Links</h2>
+              <ul>
+                <!-- <li>
+                  <a href="#">Find a Provider</a>
+                </li> -->
+                <li>
+                  <a href="find-pharmacy.html">Find a Pharmacy</a>
+                </li>
+                <li>
+                  <a href="find-doctor.html">Find a Doctor</a>
+                </li>
+                <li>
+                  <a href="profile.html">Account Settings</a>
+                </li>
+                <li>
+                  <a href="member-id-card.html">Request an ID Card</a>
+                </li>
+              </ul>
+            </div>
+            <div class="home-right-ad-area">
+              <div class="ad-image-wrap">
+                <img src="images/get-app-ad.png" height="250px"/>
+              </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid main-footer" id="mainFooter">  
+</footer>
+
+</body>
+</html>

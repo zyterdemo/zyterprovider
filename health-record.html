@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health - Health Record</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/health-record.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/common-sections.js"></script>
+</head>
+<body>
+
+  <header id="mainHeader"> </header>
+  
+<div class="container-fluid main-content-body homepage-body">
+    <div class="row">
+        <div class="col-lg-10 col-md-9 col-sm-9 col-12">
+            
+            <div class="hr-container">
+                <div class="hr-header">
+                    <h2>Health Record</h2>
+                </div>
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#visitSummary">Visit Summary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#observations">
+                        Observations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#medications">
+                        Medications</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#clinicalSummary">
+                      Clinical Summary</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#healthTracker">
+                      Health Tracker</a>
+                  </li>
+                </ul>
+              
+                <!-- Tab panes -->
+                <div class="tab-content hr-tab-content">
+                  <div id="observations" class="container tab-pane active"><br>
+                    <div class="observ-radio-btns">
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input" name="duration" id="last3days" value="customEx">
+                          <label for="last3days" class="custom-control-label" >Last 3 Days</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input"  name="duration" value="Today" id="today">
+                          <label class="custom-control-label" for="today">Today</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input"  name="duration" value="This Week" id="thisWeek" checked> 
+                          <label class="custom-control-label" for="thisWeek">This Week</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input"  name="duration" value="This Month" id="thisMonth">
+                          <label class="custom-control-label" for=
+                          "thisMonth">This Month</label>
+                        </div>
+                    </div>
+                      <div class="table-responsive hr-table">
+                          <table class="table table-striped">
+                              <thead>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Blood Pressure <br>
+                                    <small>mmHg</small>
+                                </th>
+                                <th>Pulse <br>
+                                    <small>per minute</small>
+                                </th>
+                                <th>Temperature <br>
+                                    <small>Fahrenheit</small>
+                                </th>
+                                <th>Respiration <br>
+                                    <small>per minute</small>
+                                </th>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td>12/08/2017</td>
+                                    <td>11:45 PM</td>
+                                    <td>160/110</td>
+                                    <td>100</td>
+                                    <td>97.88</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>11/08/2017</td>
+                                    <td>10:45 PM</td>
+                                    <td>150/110</td>
+                                    <td>90</td>
+                                    <td>96.88</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>10/08/2017</td>
+                                    <td>11:05 PM</td>
+                                    <td>160/110</td>
+                                    <td>100</td>
+                                    <td>97.88</td>
+                                    <td>32</td>
+                                </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+                  <div id="emergencyContact" class="container tab-pane fade"><br>
+                    <h3>Emergency Contact</h3>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  </div>
+                  <div id="symptoms" class="container tab-pane fade"><br>
+                    <h3>Symptoms</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                  <div id="medication" class="container tab-pane fade"><br>
+                    <h3>Medication</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-3 col-12">
+          <div id="mainRightSection"></div>                        
+        </div>
+    </div>
+</div>
+<footer class="container-fluid main-footer" id="mainFooter">  
+</footer>
+
+</body>
+</html>

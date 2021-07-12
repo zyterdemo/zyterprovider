@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health - Treatment Cost Estimator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/treatment-cost-estimator.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+  <script src="js/treatment-cost-estimator.js"></script>
+  <script src="js/common-sections.js"></script>
+</head>
+<body>
+
+  <header id="mainHeader"> </header>
+ 
+
+<div class="container-fluid tce-screen">
+  <div class="row">
+      <div class="col-lg-10 col-md-9 col-sm-9 col-12"> 
+        <h2>Treatment Cost Advisor </h2>
+        <p>Treatment Cost Advisor helps you estimate your costs for hundreds of common conditions, procedures, tests, and health care visits.</p>
+  <div class="stepwizard">
+      <div class="stepwizard-row setup-panel">
+          <div class="stepwizard-step col-xs-3"> 
+              <a href="#chooseTopic" type="button" class="btn btn-success btn-circle">1</a>
+              <p><small>Choose Topic</small></p>
+          </div>
+          <div class="stepwizard-step col-xs-3"> 
+              <a href="#customizeEstimate" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+              <p><small>Customize Estimate</small></p>
+          </div>
+          <div class="stepwizard-step col-xs-3"> 
+              <a href="#viewEstimate" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+              <p><small>View Estimate</small></p>
+          </div>
+      </div>
+  </div>
+  <form role="form">
+      <div class="card setup-content" id="chooseTopic">
+          <div class="card-body">
+            <div class="row">
+                <div class="col-lg-7">                    
+                    <p>
+                        To begin estimating costs, you can select a category to narrow your search. Then choose a condition, procedure, test, or health care visit.
+                    </p>
+                    <h3>Select a Category</h3>
+                    <select class="form-control">
+                        <option selected="selected" value="0">All</option>
+                        <option value="27">Women's Health</option>
+                        <option value="18">Men's Health</option>
+                        <option value="6">Children's Health</option>
+                        <option value="2">Blood Diseases</option>
+                        <option value="30">Blood Vessels</option>
+                        <option value="3">Bones, Spine, Joints and Muscles</option>
+                        <option value="4">Brain and Nerves</option>
+                        <option value="5">Cancer</option>
+                        <option value="7">Dental</option>
+                        <option value="8">Diabetes </option>
+                        <option value="9">Ear, Nose, Throat and Sinuses</option>
+                        <option value="10">Eyes</option>
+                        <option value="11">Fertility</option>
+                        <option value="12">Heart and Blood Pressure</option>
+                        <option value="13">Infectious Diseases</option>
+                        <option value="14">Injuries and Accidents</option>
+                        <option value="15">Kidney, Bladder and Urinary</option>
+                        <option value="16">Liver, Spleen and Pancreas</option>
+                        <option value="29">Lower Intestines, Groin and Rectum</option>
+                        <option value="17">Lungs and Breathing</option>
+                        <option value="19">Mental and Emotional Health</option>
+                        <option value="21">Newborns</option>
+                        <option value="22">Pregnancy</option>
+                        <option value="25">Skin</option>
+                        <option value="26">Stomach, Esophagus and Upper Intestines</option>
+                        <option value="28">Thyroid and Other Glands</option>
+                    </select>
+                    <h3>Choose a Topic to estimate</h3>
+                    <select class="form-control" >
+                        <option value="30152">Abdominal Xray</option>
+                        <option value="30128">Acupuncture</option>
+                        <option value="30001">Adult Physical Exam</option>
+                        <option value="30019">Albumin Level</option>
+                        <option value="10010">Back Pain</option>
+                        <option value="20005">Back Surgery (Spinal Fusion, Laminectomy, Disc Removal)</option>
+                        <option value="30086">Balance Testing</option>
+                        <option value="30156">Barium Enema</option>
+                    </select>  
+                </div>
+                <div class="col-lg-5">
+                    
+                </div>
+              </div> 
+              <div class="row">
+                  <div class="col-12">
+                    <a class="float-right btn btn-primary" href="#customizeEstimate">
+                        Next
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card setup-content" id="customizeEstimate">          
+          <div class="card-body">
+              <p>Enter the following information to customize your cost estimates.</p>
+              <h3>Who are you estimating costs for?</h3>
+              <div class="form-group hor">
+                  <label>Age Group</label>
+                  <select>
+                    <option selected="selected" value="0">Select an age group</option>
+                    <option value="1">0-9</option>
+                    <option value="2">10-19</option>
+                    <option value="3">20-44</option>
+                    <option value="4">45-64</option>
+                    <option value="5">65+</option>        
+                </select>
+              </div>
+              <div class="form-group hor">
+                  <label>Gender</label>
+                  <select class="form-control">
+                    <option selected="selected" value="0">
+                        Select a gender</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>        
+                </select>
+              </div> 
+              <div class="row">
+                  <div class="col-12">
+                    <a class="float-right btn btn-primary" href="#viewEstimate">
+                        Next
+                    </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="card setup-content" id="viewEstimate">
+          <div class="card-body">
+              <h3>Estimated Total Costs</h3>
+              <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+      </div>
+      
+  </form>
+    </div>
+  </div>
+</div>
+
+
+<footer class="container-fluid main-footer" id="mainFooter">  
+</footer>
+  
+</body>
+<script>
+    
+    var ctx = document.getElementById('myChart');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+</script>
+</html>
