@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Zyter Health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/home-styles/home-page-styles.css">
+    <link rel="stylesheet" href="css/claimsInquiry.css">
+   
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/home-cards.js"></script>
+  </head>
+
+  <body style="background-color: #f5fbff;">
+    <header id="mainHeader">
+      <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
+          <a class="navbar-brand main-logo" href="https://someshmca.github.io/zyterhealth/index.html"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1" aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainHeaderMenu1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/index.html">Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/my-claims.html">Member Eligibility</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/my-doctor.html">Claims</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/member-id-card.html">Service Request/Authorization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/health-record.html">Member Roster</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Available Services</a> -->
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/treatment-cost-estimator.html">Hedis Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/index.html#">Links</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/bill-payments.html">Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://someshmca.github.io/zyterhealth/bill-payments.html">Account Tools</a>
+              </li>
+            </ul>
+            <div id="welcomeUser" class="welcome-user">
+              Welcome <span>Demo User</span>
+            </div>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link waves-effect waves-light">
+                  <svg class="svg-inline--fa fa-bell fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg><!-- <i class="fas fa-bell"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="headerUserDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg><!-- <i class="fas fa-user"></i> Font Awesome fontawesome.com -->
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="headerUserDrop">
+                  <a class="dropdown-item" href="https://someshmca.github.io/zyterhealth/profile.html">My Account</a>
+                  <a class="dropdown-item" href="https://someshmca.github.io/zyterhealth/login.html">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <script>
+        /*  $(document).ready(function(){     
+           let navlinkhref = $(".navbar-nav .nav-item .nav-link").attr("href");
+            $("nav.navbar .navbar-nav .nav-item .nav-").click(
+              function(){
+                $("nav.navbar .navbar-nav .nav-item").removeClass("active");
+               $(this).addClass("active");       
+               alert(location.href)
+              }
+            );
+          })*/
+        </script></header>
+<!-- End of header --><br>
+<!--Content-->
+<div id="result" class = "back" style=" background-color: white; border: 1px solid #E2E2E2; border-radius: 5px;
+position: relative; margin: 0.5cm; padding: 0.5cm" >
+   <h4 style="color: #3E3E3E;  padding: 5px 15px;
+   border-left: 4px solid #4193CE;
+   font-size: 16px;"><b>Member Roster </b></h4>
+   
+   <br>
+
+   <span class="fontBoldBlu" style="font-size: 12px;">Select a Primary Care Provider :
+</span>
+<select class="form-combo width270" id="pcpList" name="pcpList"><option selected="selected" value="All">All</option>
+<option value="QMP000003843225">HAMMEL,RENATA</option>
+<option value="QMP000005203919">HAMMEL,RENATA</option>
+<option value="QMP000004379014" class="pcplistdd" disabled="disabled">BERNARD,ROMA</option>
+<option value="QMP000005281741" class="pcplistdd" disabled="disabled">HAINSWORTH,</option>
+<option value="QMP000004379100" class="pcplistdd" disabled="disabled">HAYMAN,SOFIA</option>
+<option value="QMP000004377897" class="pcplistdd" disabled="disabled">MOCHRIE,SHAREN</option>
+</select>
+<br>
+   <!-- Style for table-->
+  <style>
+    table {
+      font-family: Arial,sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      border: 1px solid rgb(222, 226, 230);
+    }
+    th{
+      border: 1px solid rgb(222, 226, 230);
+      text-align: center;
+      padding: 8px;
+      color: #535353;
+      
+    }
+    td{
+      border: 1px solid rgb(222, 226, 230);
+      text-align: center;
+      padding: 8px;
+      color: #535353;
+      
+    }
+    tr:nth-child(odd)
+    {
+      background-color: rgb(222, 226, 230);
+    }
+  </style>
+
+  <!-- Code For table Content-->
+    <br>
+  <table>
+    <tr>
+      <th>Select</th>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Date of Birth</th>
+      <th>Member ID</th>
+      <th>Line of Busineess</th>
+      <th>PCP Effective Date</th>
+      <th>Status</th>
+      <th>PCP Name</th>
+      
+      
+    </tr>
+    <tr>
+      <td><input type="radio"></td>
+      <td>ABATE</td>
+      <td>HABTAMU</td>
+      <td>07/19/1980</td>
+      <td>0003243826</td>
+      <td>ZYTER MARKET PLACE PROGRAM</td>
+      <td>O1/01/2021</td>
+      <td>New Needed Services</td>
+      <td>NGUYEN, HUY DUC</td>
+      
+      
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ABEBE</td>
+        <td>MESKEREM</td>
+        <td>09/13/1969</td>
+        <td>0008576249</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>O1/01/2021</td>
+        <td></td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ABEBE</td>
+        <td>SARA</td>
+        <td>12/28/1988</td>
+        <td>0003474907</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>O1/01/2021</td>
+        <td>Inpatient, Needed Services</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ABINE</td>
+        <td>BRIDGET</td>
+        <td>07/05/1964</td>
+        <td>0003667944</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>O1/01/2021</td>
+        <td>Needed Services</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ABRAHA</td>
+        <td>SENAIT</td>
+        <td>08/22/1971</td>
+        <td>0002872076</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>01/23/2020</td>
+        <td>Needed Services</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ABATE</td>
+        <td>JUANA</td>
+        <td>05/30/1975</td>
+        <td>0008875018</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>01/25/2021</td>
+        <td style="color: green;">New</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ACOSTA</td>
+        <td>RUBEN</td>
+        <td>03/25/1966</td>
+        <td>0002305724</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>01/13/2021</td>
+        <td style="color: green;">New</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ADAM</td>
+        <td>MOMINA</td>
+        <td>11/01/1971</td>
+        <td>0002381469</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>O1/01/2020</td>
+        <td>Needed Services</td>
+        <td>NGUYEN, HUY DUC</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ADAM</td>
+        <td>MUSTAFA</td>
+        <td>01/02/1963</td>
+        <td>0003293894</td>
+        <td>ZYTER MARKET PLACE PROGRAM</td>
+        <td>O1/01/2020</td>
+        <td>New Needed Services</td>
+        <td>NGUYEN, HUY DUC</td>
+    </tr>
+
+    <tr>
+        <td><input type="radio"></td>
+        <td>ADAMS</td>
+        <td>DEBRAH</td>
+        <td>07/21/1965</td>
+        <td>500000065503</td>
+        <td>ZYTER DUAL OPTIONS STAR+PLUS MMP</td>
+        <td>O1/01/2020</td>
+        <td>New Needed Services</td>
+        <td>NGUYEN, HUY Q</td>
+    </tr>
+  </table>
+   <br>
+  <input type="button" value="Print" style="width: 109px;
+height: 26px; background-color: #007bff; color: white;">
+<br><br>
+</div>
+
+<br><br>
+<!--Footer -->
+<footer class="container-fluid main-footer" id="mainFooter" style="width: 100%;"><div class="footer-links-area">
+    <div class="links-box">
+      <ul>
+        <li>About</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Site Overview</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Site Map</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Help ∓ User Guides</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/faq.html">FAQ</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy &amp; Security</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Terms and Conditions</a></li>                
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Policies</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy Policy</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Web Policies</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">FOIA</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Accessibility</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">System Use</a></li>               
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Important Links</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Care Home</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Sitemap</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Service</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Emergency Care</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Facility and Service Locator</a></li>              
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Quick Links</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Mobile Apps</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">eBenefits</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">TriCare</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Dental Insurance</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Find a Form</a></li>               
+      </ul>
+    </div>
+    <div class="footer-subscribe-box">
+      <h5>Subscribe to Receive My Healthecare Updates</h5>
+      <form>
+        <div class="form-group">
+          <label for="emailSubscribe">Email address</label>
+          <input class="form-control" id="emailSubscribe">
+        </div>
+        <button class="btn btn-warning">Subscribe</button>
+      </form>
+    </div>
+  </div> 
+  <div class="playstore-links main-footer-bg">
+      <a href="https://someshmca.github.io/zyterhealth/index.html#" class="appleicon"></a>
+      <a href="https://someshmca.github.io/zyterhealth/index.html#" class="gplayicon"></a>
+  </div>  
+  <div class="footer-copyright-area">
+    <div class="copyright-text">
+      Copyright © 2020 Zyter® Inc
+    </div>
+    <div class="copyright-links-area">
+      <a href="https://someshmca.github.io/zyterhealth/index.html#">Terms &amp; Conditions</a>|
+      <a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy Policy</a>
+    </div>
+  </div></footer>
+
+<!-- End of Footer-->
+
+        </body>
+        </html>
