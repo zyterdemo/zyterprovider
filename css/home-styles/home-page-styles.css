@@ -1,0 +1,59 @@
+@import url("./my-timeline.css");
+@import url("./home-cards.css");
+@import url("../book-appointment.css");
+@import url("../nurse-advice-line.css");
+
+.spotlight-area{
+	background: #ffffff;
+	padding: 8px;
+}
+.spotlight-area h2{
+	border-left: 4px solid #0078D3;
+	color: #797979;
+	font-size: 18px;
+	padding: 5px 15px;
+}
+.spotlight-box{
+	/* height: 123px; 
+	display: flex;	*/
+	position: relative;
+	margin-bottom: 15px;
+}
+.spotlight-image{
+	max-width: 200px;
+	 height: 120px; 
+	 float: left;
+	margin: 0 10px 5px 0;
+}
+.spotlight-image img{
+	height: 120px;
+	max-width: 100%;
+}
+.spotlight-content{
+	padding: 0 10px 30px 0;
+}
+.spotlight-content h3{
+	color: #3E3E3E;
+	font-size: 13px;
+    text-align: left;
+    font-weight: 700;
+}
+.spotlight-content p{
+	margin: 0;
+	padding: 4px 0;
+	font-size: 12px;
+	text-align: left;
+	line-height: normal;
+}
+
+.spotlight-readmore{
+	text-align: right;
+	padding: 2px;
+	position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.spotlight-readmore a{
+	color: #4193CE;
+	font-size: 12px;
+}

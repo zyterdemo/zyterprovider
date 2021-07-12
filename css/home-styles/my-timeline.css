@@ -1,0 +1,151 @@
+
+.my-schedule-wrap{
+  border: 1px solid #E3E3E3;
+  background: #ffffff;
+  margin-top: 5px;
+}
+.my-schedule-image{
+  height: 60px;
+  background:#fefef3 url("https://someshmca.github.io/zyterhealth/images/schedule-image.png") center center no-repeat;
+}
+.my-schedule-h2{
+  color: #3E3E3E;
+  padding: 5px 15px;
+  border-left: 4px solid #4193CE;
+  font-size: 16px;
+}
+.schedule-area{
+    border-left: 1px dashed #959595;
+    padding: 8px 7px;
+    margin: 4px 10px 10px 10px;
+}
+.schedule-box{
+    position: relative;
+    padding: 14px 0 0 0;
+}
+.schedule-date{
+    background-color: #FED831;
+    color: #2B2B2B;
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 5px;
+    left: -25px;
+    padding-top: 2px;
+}
+.schedule-day{
+    font-size: 11px;
+}
+.schedule-month{
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.schedule-details{
+    padding: 5px 15px;
+}
+.schedule-time{
+    color: #959595;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.scheduled-doctor{
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    padding: 5px;
+    display: flex;
+}
+.doctor-image img{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+.doctor-details{
+    padding: 5px;
+}
+.doctor-details h5{
+    color: #535353;
+    font-size: 12px;
+    padding: 0;
+    line-height: normal;
+    margin: 0;
+}
+.doctor-contact-action{
+    text-align: left;
+}
+.doctor-contact-action svg{
+    color: #48B9D5;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.book-appointment{
+    text-align: center;
+    margin-bottom: 15px;
+}
+/* #timeline {
+    list-style: none;
+    position: relative;
+  }
+  #timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 2px;
+    background-color: #4997cd;
+    left: 20px;
+    margin-left: -1.5px;
+  }
+  #timeline .clearFix {
+    clear: both;
+    height: 0;
+  }
+  #timeline .timeline-badge {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left:5px;
+    margin-left: 0;
+    background-color: #4997cd;
+    z-index: 100;
+    border-radius: 50%;
+  }
+  #timeline .timeline-badge .badge-day {
+    font-size: 11px;
+  }
+  #timeline .timeline-badge .badge-month {
+    font-size: 11px;
+    position: relative;
+  }
+  #timeline .timeline-movement {
+    position: relative;
+  }
+  #timeline .timeline-movement.timeline-movement-top {
+    height: 60px;
+  }
+  #timeline .timeline-movement .timeline-item {
+    padding: 0;
+    position: relative;
+    left: 30px;
+  }
+  #timeline .timeline-movement .timeline-item .timeline-panel {
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    color: #666;
+    padding: 10px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  .timeline-panel-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  } */

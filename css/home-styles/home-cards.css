@@ -1,0 +1,68 @@
+
+.home-cards-area{
+    grid-template-columns: auto;
+    display: grid;
+    padding: 0;
+}
+@media (min-width: 576px){
+    .home-cards-area{
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width: 768px){
+    .home-cards-area{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (min-width: 992px){
+    .home-cards-area{
+        /*display: flex;
+        flex-wrap: wrap;*/        
+        grid-template-columns: auto auto auto auto;
+    }
+}
+.home-card{
+    /* width: 200px; 
+    height: 120px;*/
+    border: 1px solid #E3E3E3;
+    margin: 5px 5px 15px 5px;
+    box-shadow: 0px 3px 6px #00000029;
+    width: 145px;
+}
+.home-card-content{
+    /* height: 107px; */
+    background: #ffffff;
+}
+.home-card-icon{
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.home-card-icon img{
+    max-height: 100%;
+}
+.home-card-icon-text{
+    padding: 3px;
+    color: #797979;
+}
+.home-card-icon-text p{
+    text-align: center;
+    font-size: 12px;
+}
+.home-card-footer{
+    height: 25px;
+}
+.home-card-footer .btn{
+    height: 25px;
+    width: 100%;
+    font-size: 12px;
+    padding-top: 2px;
+}
+.home-card-footer .btn.btn-light{
+    background: #F0F0F0;
+    color: #4193CE;
+    font-weight: bold;
+}
