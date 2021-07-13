@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Member Eligibility</title>
+  <title>Member-Eligibility</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="mainHeaderMenu1">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/index.html">Home
+              <a class="nav-link" href="./index.html">Home
               </a>
             </li>
             <li class="nav-item">
@@ -99,7 +99,7 @@
     <div class="col-lg-10 col-md-9 col-sm-9 col-12">
         <div class="mc-area">
           <div class="mc-header">
-            <h3>Member Search</h3>
+            <h2>Member Search</h>
           </div>
             <ul class="mc-list">
                   <div>
@@ -111,27 +111,19 @@
                                 </td>
                             </tr>
                             <tr align="left">
-                               <td align="right" style="width:20%;">
-                                    <span class="form-group" style="font-size:16px;">Member ID:&nbsp;&nbsp;</span>
+                               <td valign="top" align="middle" style="width:16%;" height="25px"  >
+                                    <span class="form-group" style="font-size:14px;">Member ID:&nbsp;&nbsp;</span>
                                 </td>
-                                <td align="left" style="width:30%;">
+                                <td align="left" >
                                     <!-- Max Length Not Set Issue(Max Length Set to 20) - Start -->
-                                    <input class="form-text-search" id="txtMemID" maxlength="20" name="txtMemID" type="text" value="" autocomplete="off">
+                                    <input class="form-control" id="txtMemID" maxlength="20" name="txtMemID" type="text" value="" autocomplete="off">
                                     <!-- Max Length Not Set Issue - End -->
                                 </td>
-                                <td class="width30p">
-                                    
-                                </td>
-                                <td class="width15p">
-                                </td>
-                                <td class="width3p">
-                                </td>
-                                <td class="width25p">
-                                </td>
+                               
                             </tr>
                             <tr align="left">
                                 <td align="center" valign="top" style="font-size:12px; color: White;">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;or
+                                    or
                                 </td>
                                 <td align="center">or
                                 </td>
@@ -145,31 +137,31 @@
                                 </td>
                             </tr>
                             <tr align="left">
-                               <td valign="center" align="right">
-                                    <span class="form-group" style="font-size:16px;">First Name:&nbsp;&nbsp;</span>
+                               <td valign="center" align="middle" style="width:16%;" height="25px">
+                                    <span class="form-group" style="font-size:14px;">First Name:&nbsp;&nbsp;</span>
                                 </td>
                                 <td align="left">
                                     <!-- Max Length Not Set Issue(Max Length Set to 30) - Start -->
-                                    <input class="form-text-search" id="txtFirstName" maxlength="30" name="txtFirstName" title="First Name" type="text" value="" autocomplete="off">
+                                    <input class="form-control" id="txtFirstName" maxlength="30" name="txtFirstName" title="First Name" type="text" value="" autocomplete="off">
                                     <!-- Max Length Not Set Issue - End -->
                               </td>
-                              <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <td colspan="4">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                               </tbody></table>
                             </td>
                                 
                               </tr>
-                              <tr>
-                                <td class="width25p" rowspan="2" colspan="2">
-                                </td>
-                            </tr>
+                              
+                              <tr><td></td></tr>
+                             
                               <tr align="left">
-                                <td valign="center" align="right">
-                                     <span class="form-group" style="font-size:16px;">Last Name:&nbsp;&nbsp;</span>
+                                <td valign="center" align="middle" style="width:16%;" height="25px">
+                                     <span class="form-group" style="font-size:14px;">Last Name:&nbsp;&nbsp;</span>
                                  </td>
-                                 <td align="left">
+                                 <td align="left" >
                                      <!-- Max Length Not Set Issue(Max Length Set to 30) - Start -->
-                                     <input class="form-text-search" id="txtFirstName" maxlength="30" name="txtFirstName" title="First Name" type="text" value="" autocomplete="off">
+                                     <input class="form-control" id="txtLastName" maxlength="30" name="txtLastName" title="Last Name" type="text" value="" autocomplete="off">
                                      <!-- Max Length Not Set Issue - End -->
                                </td>
                                <td colspan="4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -178,191 +170,116 @@
                              </td>
                                  
                                </tr>
+                            
                             <tr>
-                                <td class="width25p" rowspan="2" colspan="3">
-                                </td>
-                            </tr>
-                            <tr align="left">
-                                <td>
+                              <td valign="center" align="middle" style="width:16%;" height="25px">
+                                    <span class="form-group" style="font-size:14px;">Date of Birth:&nbsp;&nbsp;</span>
                                 </td>
                                 <td align="left">
-                                    <span>&nbsp;&nbsp;&nbsp;</span>
-                                </td>
-                                <td>
-                                </td>
-                                <td align="left">
-                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </td>
-                            </tr>
-                            <tr>
-                              <td valign="center" align="right">
-                                    <span class="form-group" style="font-size:16px;">Date of Birth:&nbsp;&nbsp;</span>
-                                </td>
-                                <td align="left" colspan="1">
-                                    <input class="form-text-search" id="txtDOB" maxlength="10" name="txtDOB" type="text" value="" autocomplete="off">
+                                    <input class="form-control" id="txtDOB" maxlength="10" name="txtDOB" type="text" value="" autocomplete="off">
                                     
                                     </td>
-                               
-                                <td id="tdNoMemberFoundAlert" class="displayNone" rowspan="1" colspan="3" width="420px" style="display: none;">
-                                    <span class="fontBold">No matching member data is found. Please verify your search criteria.</span>  
-                                </td>
-                                   
-                                 <td id="tdMemberNotEligibleAlert" class="displayNone" rowspan="1" colspan="3" width="420px">
-                                    <span class="fontBold">The Member you have searched for was found, but is not eligible on the Search Date entered. Please modify the search date (or) go to Member Eligibility Inquiry to view enrollment history for this member.</span>
-                                </td>
+                                    <td>
+                                      <span>(mmddyyyy)</span>
+                                  </td>
+                                  
                             </tr>
-                            <tr>
-                              <td>
-                                </td>
-                                <td>
-                                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(mmddyyyy)</span>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                </td>
-                                <td>
-                                </td>
-                            </tr>
+                            <tr><td></td></tr>
+                            <tr></tr>
+                            <tr></tr>
                             
                         </tbody>
                     </table>
                 </div>
-                 
+              </ul>    
                 
-                <div class="mc-header">
-                  <h3>Search Options</h3>
-                </div>
+           <div class="mc-header">
+            <h2>Search Options</h2>
+           </div>
             
-                  <tr id="trSearchOption">
-                    <td colspan="3" align="left" valign="top">
-                        <div class="twoColumnDiv">
-                            <div class="ColumnTwo">
-                            </div>
-                        </div>
-                        <div class="brdDksolid">
-                            <table class="width110p" border="0" id="Table1">
+           <ul class="mc-list">   
+                  <div>
+                   <table width="100%"  border="0" id="Table1">
                                 <tbody>
-                                    <tr align="left">
-                                       <td align="right" class="width12p">
-                                            &nbsp;
-                                        </td>
-                                        <td align="left" class="width18p">
-                                            &nbsp;
-                                        </td>
-                                        <td class="width5p">
-                                        </td>
-                                        <td class="width15p">
-                                        </td>
-                                        <td class="width3p">
-                                        </td>
-                                        <td class="width25p">
-                                        </td>
-                                    </tr>
+                                  
+                                  <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
                                     <tr align="left"> 
                                        <td valign="top" align="middle" style="width:16%;" height="25px">
-                                            <span class="form-group" style="font-size:16px;">Gender:&nbsp;&nbsp;</span>
+                                            <span class="form-group" style="font-size:14px;">Gender:&nbsp;&nbsp;</span>
                                         </td>
-                                        <td valign="top" align="left" class="width18p">
-                                            <select class="form-combo" id="drpGender" name="drpGender"><option value="">Select</option>
+                                        <td align="left">
+                                            <select class="form-control" style="width: 70%;" id="drpGender" name="drpGender"><option value="">Select</option>
                                                          <option value="M">Male</option>
                                                          <option value="F">Female</option>
                                             </select>
-                                        </td>
-                                        <td>
-                                        </td>
-                                         
-                               <td rowspan="2" class="width25p brdDk" colspan="3">
-                                         <span id="spanMultipleMemberAlert" class="brdD" style="color: red; display: none;">Your search has returned more than one result. Enter optional information for the record you are requesting then click Submit again.</span>
-                                  </td>
-                                         
+                                        </td>   
                                     </tr>
+
                                     <tr align="left">
-                                        <td valign="top" align="middle">
-                                            <span class="form-group" style="font-size:16px;">Zip-Code:&nbsp;&nbsp;</span>
+                                        <td valign="top" align="middle" style="width:16%;" height="25px">
+                                            <span class="form-group" style="font-size:14px;">Zip-Code:&nbsp;&nbsp;</span>
                                         </td>
                                         <td align="left">
-                                            <input class="form-text-search" id="txtZipCode" maxlength="10" name="txtZipCode" type="text" value="" autocomplete="off">
-                                        </td>
+                                          <!-- Max Length Not Set Issue(Max Length Set to 30) - Start -->
+                                          <input class="form-control" style="width: 70%;" id="txtFirstName" maxlength="30" name="txtFirstName" title="First Name" type="text" value="" autocomplete="off">
+                                          <!-- Max Length Not Set Issue - End -->
+                                    </td>
                                     </tr>
                                     <tr>
-                                        <td valign="middle" align="middle" height="35px">
-                                            <span class="form-group" style="font-size:16px;">Line of Business:&nbsp;&nbsp;</span>
+                                        <td valign="middle" align="middle" style="width:16%;" height="25px">
+                                            <span class="form-group" style="font-size:14px;">Line of Business:&nbsp;&nbsp;</span>
                                         </td>
-                                        <td align="left" colspan="3" height="35px" valign="middle">
+                                        <td valign="top" align="left">
                                             
-                                            <select class="form-combo" id="lob" name="lob"><option value="">Select</option>
-<option value="QMXHPQ1682">ZYTER MEDICARE OPTIONS (HMO)</option>
-<option value="QMXHPQ1683">ZYTER MEDICARE OPTIONS PLUS (HMO SNP)</option>
-<option value="QMXHPQ2263">ZYTER MEDICARE CHOICE (HMO SNP)</option>
-</select>
+                                            <select class="form-control" style="width: 70%;" id="lob" name="lob"><option value="">Select</option>
+                                                              <option value="QMXHPQ1682">ZYTER MEDICARE OPTIONS (HMO)</option>
+                                                              <option value="QMXHPQ1683">ZYTER MEDICARE OPTIONS PLUS (HMO SNP)</option>
+                                                              <option value="QMXHPQ2263">ZYTER MEDICARE CHOICE (HMO SNP)</option>
+                                            </select>
                                             
                                         </td>
                                     </tr>
                                 </tbody>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
+                                
+                    </table>
+                 </div>
+           </ul>
                 
-                <tr>
-                  <td class="width25p" rowspan="2" colspan="2">
-                  </td>
-                  <tr>
-                      <td align="left" valign="bottom">
-                          <span class="form-group" style="font-size:16px;">To see member eligibility as of certain date enter date here:</span> 
+                
+          
+            <div style="margin-left: 30px; ">
+              <span style="font-size:14px;">To see member eligibility as of certain date enter date here:</span> 
                           <input class="form-text-search" id="txtEligibility" maxlength="10" name="txtEligibility" type="text" value="07/01/2021" autocomplete="off">(mmddyyyy)
-                      </td>
-                  </tr>
+            </div>
+            <div>
+              &nbsp;&nbsp;
+              &nbsp;&nbsp;
+              &nbsp;&nbsp;
 
-                  <tr>
-                    <td colspan="3">
-                        <table class="height40 width100p">
-                            <tbody>
-                                <tr>
-                                    <td align="left" class="width10p">
-                                    </td>
-                                    <td align="left">
-                                        <div>
-                                            <table>
-                                                <tbody>
-                                                    <tr>
 
-                                                        <td class="width55p" colspan="4" align="middle">
-                                                            <div>
-                                                              <input id="btnSearchMem" onclick="parent.location='./Member Details.html'" class="btn btn-light" tabindex="0" type="submit" value="Search for Member" style="background-image: url('https://someshmca.github.io/zyterhealth/images/butn_backg_158px.png'); background-repeat: no-repeat; color: blue;" autocomplete="off">
-                                                            &nbsp;
-                                                                <input class="btn btn-light" id="btnClearNew" tabindex="0" type="submit" name="clear" value="Clear All" style="background-image: url('https://someshmca.github.io/zyterhealth/images/butn_backg_158px.png'); background-repeat: no-repeat; color: blue;" autocomplete="off">
-                                                              </div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="right" colspan="3">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <!-- Do not change the height of this table -->
-                        
-                    </td>
-                </tr>
-        
-               
-               
-                
-            </ul>
+            </div>
+            <div>
+              <div class="width55p" colspan="4" valign="middle" align="middle" >
+                <div >
+                  <input id="btnSearchMem" onclick="parent.location='./Member Details.html'" tabindex="0" type="submit" value="Search" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
+                  &nbsp;&nbsp;
+                    <input  id="btnClearNew" tabindex="0" type="submit" name="clear" value="Clear All" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
+                  </div>    
+             </div> 
+            </div>
+            <div>
+              &nbsp;&nbsp;
+              &nbsp;&nbsp;
+              &nbsp;&nbsp;
+
+
+            </div>
         </div>
+        
     </div>
     <div class="col-lg-2 col-md-3 col-sm-4 col-12">
         <div id="mainRightSection"><div class="imp-links-area">
