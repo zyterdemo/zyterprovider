@@ -37,7 +37,7 @@ a.btn.btn-primary{
 	display: inline-block;
 	width: 130px;
 	height: 33px;
-	background: url("https://someshmca.github.io/zyterhealth/images/logo.png") no-repeat;
+	background: url("../images/logo.png") no-repeat;
 	cursor: pointer;
 	margin-right: 40px;
 }
@@ -81,7 +81,7 @@ a.btn.btn-primary{
     font-size: 16px;
 }
 .navigate-btn{
-    background: url("https://someshmca.github.io/zyterhealth/images/navigate-icon.png") 3px 6px no-repeat;
+    background: url("../images/navigate-icon.png") 3px 6px no-repeat;
     padding-left: 23px;
     background-size: 15px auto;
     border: 0px solid transparent;
@@ -99,6 +99,7 @@ a.btn.btn-primary{
 	border-radius: 5px;
 	background: #ffffff;
 	margin-top: 5px;
+	
 	padding-bottom: 10px;
 }
  .imp-links-area h2{
@@ -124,6 +125,49 @@ a.btn.btn-primary{
 }
 .ad-image-wrap img{
 	max-width: 100%;
+}
+
+.fontBoldBlu
+{
+    font-weight: bold;
+    font-size: 10pt;
+    color: #00a0ae !important;
+    font-family: verdana,arial,helvetica, sans-serif;
+}
+.ColumnOneWidth15p
+{    
+    clear: both;
+    float: left;
+    width: 130px;   
+    
+}
+.displayNone
+{
+    display: none;
+}
+.button_158
+        {
+            width: 158px;
+            height: 26px;
+            text-align: center;
+            background-color: Transparent;
+            border: 0;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+.single
+{
+	cursor:pointer; 
+    margin: 5px;
+    border-bottom: 3px solid #1589EE;
+    outline: 1px gray;
+	box-sizing: border-box;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+	display: block;
+    padding: .5rem 1rem;
 }
 
 
@@ -228,10 +272,10 @@ a.btn.btn-primary{
 }
 
 .playstore-links a.appleicon{
-	background: url("https://someshmca.github.io/zyterhealth/images/apple-store.png") 0 0 no-repeat;
+	background: url("../images/apple-store.png") 0 0 no-repeat;
 	background-size: 128px 40px;
 }	
 .playstore-links a.gplayicon{
-	background: url("https://someshmca.github.io/zyterhealth/images/google-play-store.png") 0 0 no-repeat;
+	background: url("../images/google-play-store.png") 0 0 no-repeat;
 	background-size: 128px 40px;
 }	
