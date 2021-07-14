@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zyter Health</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home-styles/home-page-styles.css">
+  <script src="js/all.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/home-cards.js"></script>
+</head>
+<body>
+
+
+  <header id="mainHeader">
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
+        <a class="navbar-brand main-logo" href="https://someshmca.github.io/zyterhealth/index.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1" aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainHeaderMenu1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./member-eligibility.html">Member Eligibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./claims-status-inquiry.html">Claims</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/member-id-card.html">Service Request/Authorization</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./member-roster.html">Member Roster</a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="#">Available Services</a> -->
+              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/treatment-cost-estimator.html">Hedis Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/index.html#">Links</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/bill-payments.html">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://someshmca.github.io/zyterhealth/bill-payments.html">Account Tools</a>
+            </li>
+          </ul>
+          <div id="welcomeUser" class="welcome-user">
+            Welcome <span>Demo User</span>
+          </div>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg><!-- <i class="fas fa-search"></i> Font Awesome fontawesome.com -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <svg class="svg-inline--fa fa-bell fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg><!-- <i class="fas fa-bell"></i> Font Awesome fontawesome.com -->
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="headerUserDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg><!-- <i class="fas fa-user"></i> Font Awesome fontawesome.com -->
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="headerUserDrop">
+                <a class="dropdown-item" href="https://someshmca.github.io/zyterhealth/profile.html">My Account</a>
+                <a class="dropdown-item" href="https://someshmca.github.io/zyterhealth/login.html">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <script>
+      /*  $(document).ready(function(){     
+         let navlinkhref = $(".navbar-nav .nav-item .nav-link").attr("href");
+          $("nav.navbar .navbar-nav .nav-item .nav-").click(
+            function(){
+              $("nav.navbar .navbar-nav .nav-item").removeClass("active");
+             $(this).addClass("active");       
+             alert(location.href)
+            }
+          );
+        })*/
+      </script></header>
+  
+<div class="container-fluid main-content-body homepage-body">
+  <div class="row">
+    <div class="col-lg-10 col-md-9 col-sm-8 col-12">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+          <div class="my-schedule-wrap">
+            <div class="my-schedule-image">              
+            </div>
+          <h2 class="my-schedule-h2">
+            My Schedule
+          </h2>
+          <div class="schedule-area">
+              <div class="schedule-box">
+                <div class="schedule-date">
+                  <span class="schedule-day">27</span>
+                  <span class="schedule-month">Mar</span>
+                </div>
+                <div class="schedule-details">
+                  <div class="schedule-time">1:00 PM</div>
+                  <div class="scheduled-doctor">
+                    <div class="doctor-image">
+                      <img src="images/doctor-icon1.jpg"/>
+                    </div>
+                    <div class="doctor-details">
+                      <h5>Meeting with Dr. John</h5>
+                      <div class="doctor-contact-action">
+                        <span class="fas fa-comment"></span> 
+                        <span class="fas fa-phone"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end of schedule-box -->
+              <div class="schedule-box">
+                <div class="schedule-date">
+                  <span class="schedule-day">27</span>
+                  <span class="schedule-month">Mar</span>
+                </div>
+                <div class="schedule-details">
+                  <div class="schedule-time">6:30 PM</div>
+                  <div class="scheduled-doctor">
+                    <div class="doctor-image">
+                      <img src="images/doctor-icon2.png"/>
+                    </div>
+                    <div class="doctor-details">
+                      <h5>Meeting with Dr. Jessy</h5>
+                      <div class="doctor-contact-action">
+                        <span class="fas fa-comment"></span> 
+                        <span class="fas fa-phone"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- end of schedule-box -->
+          </div> <!-- end of schedule-area -->          
+          <div class="book-appointment">
+            <a class="btn btn-primary" data-target="#bookAppointment" data-toggle="modal">
+              Book an Appointment
+            </a>
+          </div>
+        </div> <!-- end of my-schedule-wrap -->
+        </div>
+        <div class="col-lg-9 col-md-8 col-sm-12 col-12 p-0">
+          <div class="home-cards-area" id="homeCardsArea">
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/doctor-icon3.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Member Eligibility</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="./member-eligibility.html">
+                  View
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/doctor-icon4.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Claims Status Inquiry</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="./claims-status-inquiry.html">
+                  View
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/ID-Card-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Create Professional Claim (CMS 1500)</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="member-id-card.html">
+                  Create
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/ZDoc-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Create Institutional Claim (UB04)</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="book-appointment.html">
+                  Create
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/covid19-screener.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Create/Manage Claims Template</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="covid-19-screener.html">
+                  Create/Manage
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/find-doctor-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Service Request/Authorization Status Inquiry</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="find-doctor.html">
+                  Check
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/home-monitering-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Create Service Request/Authorization</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Create
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/urgent-care-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Open Incomplete Service Request/Authorization</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  Open
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/pharmacy-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Create Service Request/Authorization Template</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="find-pharmacy.html">
+                  Create
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/symptoms-checker-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Member Roster</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <a class="btn btn-light" href="./member-roster.html">
+                  View
+                </a>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/Wellness-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Hedis Profile</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  View
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/contact-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Links</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  View
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/Wellness-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Forms</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  View
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+            <div class="home-card">
+              <div class="home-card-content">
+                <div class="home-card-icon">
+                    <img src="images/Wellness-icon.png"/>
+                </div>
+                <div class="home-card-icon-text">
+                  <p>Account Tools</p>
+                </div>
+              </div>
+              <div class="home-card-footer">
+                <button class="btn btn-light">
+                  View
+                </button>
+              </div>
+            </div> <!-- end of home-card -->
+          </div>
+        </div>
+      </div>
+      <div class="spotlight-area">
+        <h2>In the Spotlight</h2>
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-1.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Coronavirus: What Veterans Need to Know</h3>
+                <p>
+                  Concerns about COVID-19 can be stressful for many people, and it’s understandable to feel anxious. Let VA help. We have answers to your questions.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-2.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Help Stop the Spread</h3>
+                <p>
+                  VA is following the CDC’s lead to bring you the most up-to-date information about the coronavirus. We can also provide you information on how to lower your risk of getting coronavirus, as well as what you should do if you feel sick.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-3.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Sharing Health Records Safely</h3>
+                <p>
+                  Starting April 17, 2020, your community providers who are in VA’s network and participate in VHIE will be able to securely view your VA electronic health information. Previously, you had to complete a form to authorize this electronic sharing.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="col-md-6 col-sm-6 col-12">
+            <div class="spotlight-box">
+              <div class="spotlight-image">
+                <img src="images/spotlight-4.png"/>
+              </div>
+              <div class="spotlight-content">
+                <h3>Veterans: Call Before Visiting Your VA Facility</h3>
+                <p>
+                  Got a fever, cold, cough, or flu-like symptoms? Are you worried that you have a viral illness? Sometimes the last thing you want to do is to get out of the house to see the doctor, potentially exposing yourself (and others) to more potential bugs and viruses. Learn how you can use VA Video Connect to talk to your doctor.
+                </p>
+                <div class="spotlight-readmore">
+                  <a href="#">Read More</a>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div> <!-- end of spotlight-area -->
+    </div>
+    <div class="col-lg-2 col-md-3 col-sm-4 col-12">
+      <div id="mainRightSection"><div class="imp-links-area">
+    <h2>Favorites</h2>
+    <ul>
+      <!-- <li>
+        <a href="#">Find a Provider</a>
+      </li> -->
+      <li>
+        <a href="https://someshmca.github.io/zyterhealth/find-pharmacy.html">Claims Status Inquiry</a>
+      </li>
+      <li>
+        <a href="https://someshmca.github.io/zyterhealth/find-doctor.html">Member Roster</a>
+      </li>
+      <li>
+        <a href="https://someshmca.github.io/zyterhealth/profile.html">Service Request/Authorization Status Inquiry</a>
+      </li>
+      <li>
+        <a href="https://someshmca.github.io/zyterhealth/member-id-card.html">Hedis Profile</a>
+      </li>
+    </ul>
+  </div>
+  <div class="home-right-ad-area">
+    <div class="ad-image-wrap">
+      <img src="./images/get-app-ad.png" height="250px">
+    </div>
+  </div></div>
+    </div>
+  </div>
+</div>
+  <footer class="container-fluid main-footer" id="mainFooter"><div class="footer-links-area">
+    <div class="links-box">
+      <ul>
+        <li>About</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Site Overview</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Site Map</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Help ∓ User Guides</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/faq.html">FAQ</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy &amp; Security</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Terms and Conditions</a></li>                
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Policies</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy Policy</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Web Policies</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">FOIA</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Accessibility</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">System Use</a></li>               
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Important Links</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Care Home</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Sitemap</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Service</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Emergency Care</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Facility and Service Locator</a></li>              
+      </ul>
+    </div>
+    <div class="links-box">
+      <ul>
+        <li>Quick Links</li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Mobile Apps</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">eBenefits</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">TriCare</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Dental Insurance</a></li>
+        <li><a href="https://someshmca.github.io/zyterhealth/index.html#">Find a Form</a></li>               
+      </ul>
+    </div>
+    <div class="footer-subscribe-box">
+      <h5>Subscribe to Receive My Healthecare Updates</h5>
+      <form>
+        <div class="form-group">
+          <label for="emailSubscribe">Email address</label>
+          <input class="form-control" id="emailSubscribe">
+        </div>
+        <button class="btn btn-warning">Subscribe</button>
+      </form>
+    </div>
+  </div> 
+  <div class="playstore-links main-footer-bg">
+      <a href="https://someshmca.github.io/zyterhealth/index.html#" class="appleicon"></a>
+      <a href="https://someshmca.github.io/zyterhealth/index.html#" class="gplayicon"></a>
+  </div>  
+  <div class="footer-copyright-area">
+    <div class="copyright-text">
+      Copyright © 2020 Zyter® Inc
+    </div>
+    <div class="copyright-links-area">
+      <a href="https://someshmca.github.io/zyterhealth/index.html#">Terms &amp; Conditions</a>|
+      <a href="https://someshmca.github.io/zyterhealth/index.html#">Privacy Policy</a>
+    </div>
+  </div></footer>
+
+  
+  <div class="modal fade text-center nal-modal" id="nurseAdviceLine">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <h2>Nurse Advice Line</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="nal-content">
+            <h1 class="nal-helpline">
+              For emergency call 611
+            </h1>
+            <h4 class="text-primary">
+              24 hours Nurse Advice Line
+            </h4>
+            <p>
+              Highly trained nurses are available 24 hours a day, 7 days a week. They can speak with you in your language. They will help you to get the care you need. 
+            </p>
+            <fieldset>
+              <legend>Select a State</legend>
+              <select  class="form-control" id="nurseSelectUS" onchange="selectStateUS(this.value)">
+              </select>
+            </fieldset>
+            <div class="text-right my-2">
+              <h5 class="text-secondary">
+                Call 711
+              </h5>
+            </div>
+            <div class="form-group">
+              <h5 class="text-dark" id="statePhoneNo">
+                Call (888) 665-4601
+              </h5>
+            </div>
+            <hr/>
+            <div class="nal-qa">
+              <h2 class="text-primary">
+                When should members goto an Urgent Care Center(UCC)?
+              </h2>
+              <p>Use a UCC for a non-life threatening condition sucn a: </p>
+              <ul>
+                <li>Sore throat, Cough or runny nose</li>
+                <li>Muscle Strains/Sprains</li>
+                <li>Minor Outs/Burns</li>
+                <li>Earache</li>
+                <li>Flashes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade text-center" id="bookAppointment">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-header cm-header">
+          <h2>Book an Appointment</h2>
+          <button type="button" class="close" data-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+          <div class="booking-form">
+            <div id="bookingFormArea">
+                  <div class="form-group">
+                      <span class="form-label">Appointment with</span>
+                      <input class="form-control" type="text" placeholder="Enter Doctor's Name">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Date</span>
+                          <input class="form-control" type="date">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <span class="form-label">Select Time</span>
+                          <input class="form-control" type="time" placeholder="Mobile Number">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                      <button class="submit-btn" id="bookAppointmentBtn">
+                      Book an Appointment</button>
+                  </div>
+            </div> <!-- end of bookingFormArea-->
+            <div id="bookingSuccess">
+                <h2>Your Appointment is confirmed</h2>
+            </div>
+          </div> <!-- end of booking-form div -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/common-sections.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#bookingSuccess").hide();
+      $("#bookAppointmentBtn").click(function(){
+        $("#bookingFormArea").hide(100);
+        $("#bookingSuccess").show(100);
+      });
+    })
+  </script>
+  <script src="./js/custom-zyter.js"></script>
+</body>
+
+</html>
