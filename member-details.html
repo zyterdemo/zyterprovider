@@ -22,7 +22,7 @@
 
   <header id="mainHeader">
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
-        <a class="navbar-brand main-logo" href="https://someshmca.github.io/zyterhealth/index.html"></a>
+        <a class="navbar-brand main-logo" href="./index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1" aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -184,22 +184,23 @@
               flex-wrap: wrap;
               list-style: none;
               border-bottom: 1px solid #dee2e6;">
-              
-               <a class="single active" id="default" target="1" >Member Information</a>
-               <a class="single" target="2"  >Enrollment Information</a>
-               <a class="single" target="3"  >Primary Care Provider Information</a>
-               <a class="single" target="4" >IPA/Group Information</a>
-               <a class="single" target="5">History</a>
+              <li>
+               <a class="single" data-toggle="tab"  target="1">Member Information</a></li>
+              <li> <a class="single" data-toggle="tab" target="2"  >Enrollment Information</a></li>
+              <li><a class="single" data-toggle="tab" target="3"  >Primary Care Provider Information</a></li>
+              <li> <a class="single" data-toggle="tab" target="4" >IPA/Group Information</a></li>
               </ul>
              <section class="target_box" style="background: transparent;">
-               <div id="div1" class="target active">
 
+               <div id="div1" class="target" class="tab-pane fade in active">
+                <div  style="margin: 20px 0 0 0;">
+                </div>
                 <div>
                   <div>
-                      <table border="0" style="width: 75%">
+                      <table border="0" style=" margin-left: 60px ;width: 35%;">
                           <tbody>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       
                                       <span class="nowrap">Name:&nbsp;&nbsp;</span>
                                       
@@ -212,7 +213,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width13p fontBold">
+                                  <td valign="top" align="left" class="width13p fontBold">
                                       <span class="nowrap">Date of Birth:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -224,7 +225,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Mailing Address:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -233,7 +234,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Member #:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -242,7 +243,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Gender #:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -251,7 +252,7 @@
                               </tr>
                              
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Home #:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -261,7 +262,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Alternative #:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -270,19 +271,19 @@
                                 
                               </tr>
                               <tr align="left">
-                                <td valign="top" align="right" class="width10p fontBold">
+                                <td valign="top" align="left" class="width10p fontBold">
                                     <span class="nowrap">Mobile #:&nbsp;&nbsp;</span>
                                 </td>
                                 <td valign="top" align="left" class="width15p">
-                              
+                                        9876543210
                                   </td>
                             </tr>
                             <tr align="left">
-                              <td valign="top" align="right" class="width10p fontBold">
+                              <td valign="top" align="left" class="width10p fontBold">
                                   <span class="nowrap">Email ID #:&nbsp;&nbsp;</span>
                               </td>
                               <td valign="top" align="left" class="width15p">
-                            
+                                demouser001@gmail.com
                                 </td>
                           </tr>
                            
@@ -295,16 +296,15 @@
                   </div>
               </div>
                </div>
-               <div id="div2" class="target" style="display: none;">
-
+               <div id="div2" class="target" class="tab-pane fade" style="display: none;">
+                <div  style="margin: 20px 0 0 0;">
+                </div>
                 <div>
                   <div>
-                      
-                      <!-- EN 37 Start -->
-                      <table border="0" style="width: 75%">
+                      <table border="0"  style=" margin-left: 60px ;width: 35%;">
                           <tbody>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       
                                       <span class="nowrap">Enrollment Plan:&nbsp;&nbsp;</span>
                                       
@@ -322,7 +322,7 @@
                                   </td>
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width13p fontBold">
+                                  <td valign="top" align="left" class="width13p fontBold">
                                       <span class="nowrap">Enrollment Status:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -337,7 +337,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Enrollment Effective Date:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -351,7 +351,7 @@
                                   </td>
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Enrollment Termination Date:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -360,7 +360,7 @@
                                   
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Rate Code:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -381,7 +381,7 @@
                               
                               <!-- Q4'12 - BR024 CSHCS flag in Enrollment END-->
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Health Plan ID:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
@@ -397,25 +397,14 @@
                                   </td>
                               </tr>
                               <tr align="left">
-                                  <td valign="top" align="right" class="width10p fontBold">
+                                  <td valign="top" align="left" class="width10p fontBold">
                                       <span class="nowrap">Subscriber ID:&nbsp;&nbsp;</span>
                                   </td>
                                   <td valign="top" align="left" class="width15p">
                                       600001         
                                   </td>
-                                  <!-- SPJR balnk td removed -->
-                                  <!-- Marketplace 2020 Sprint 8 MAR-14767 Changes - Start-->
-                                  
-                                  <!-- Marketplace 2020 Sprint 8 MAR-14767 Changes - End-->
                               </tr>
-                              
-                              
-                              
-                              <!-- Q4'12 - BR023 Medi-Kids flag in Enrollment START-->
-                              
-                              
-                              
-                              <!-- Q4'12 - BR023 Medi-Kids flag in Enrollment END-->
+\
                           </tbody>
                       </table>
                       <!-- EN 37 End -->
@@ -425,12 +414,12 @@
                   </div>
               </div>
               </div>
-              <div id="div3" class="target" style="display: none;">
+              <div id="div3" class="target" class="tab-pane fade" style="display: none;">
 
                 <div class="subTabContent pcpInfo">
                   <div class="dataItem">
                       <!-- Primary Care Provider Information Begins -->
-                      <div id="PCPInfoMessage">
+                      <div id="PCPInfoMessage"  style=" margin-left: 60px ;width: 35%;">
                         
                           <span>There are no Primary Care Provider Information records</span>
                           
@@ -447,12 +436,12 @@
               </div>
               </div>
 
-              <div id="div4" class="target" style="display: none;">
+              <div id="div4" class="target" class="tab-pane fade" style="display: none;">
 
                <div class="subTabContent ipaInfo">
                                         <div class="dataItem">
                                             <!-- IPA/Group Information Starts-->
-                                            <div id="IPAMessage">
+                                            <div id="IPAMessage"  style=" margin-left: 60px ;width: 35%;">
                                                 
                                                 <span>There are no IPA/Group Information records.</span>
                                                 
@@ -469,61 +458,11 @@
                                     </div>
               </div>
 
-              <div id="div5" class="target" style="display: none;">
-               
-                <div class="subTabContent enrollHistory">
-                  <div class="twoColumnDiv" style="margin: 0px;">
-                      <div class="ColumnOne" style="width: auto;">
-                          <span id="spnEnrollHis" class="cursorHand">+ Enrollment History</span>
-                      </div>
-                      <div class="ColumnTwo" style="clear: none; float: left; position: relative; top: 5px;">
-                          <span id="spnEnrollHisText">Expand to view Enrollment History</span>
-                      </div>
-                  </div>
-                  <!-- Enrollment Information History Begins -->
-                  <div class="displayNone" id="EnrollHistoryMessage" style="margin: 0px 14px;">
-                      
-                      <span>There are no history records </span>
-                      
-                  </div>
-                  <!-- Enrollment Information History Ends -->
-                  <div class="twoColumnDiv" style="margin: 20px 0 0 0;">
-                      <div class="ColumnOne" style="width: auto;">
-                          <span id="spnPCPHistory" class="cursorHand">+ PCP History</span>
-                      </div>
-                      <div class="ColumnTwo" style="clear: none; float: left; position: relative; top: 5px;">
-                          <span id="spnPCPHistoryText">Expand to view PCP History</span>
-                      </div>
-                  </div>
-                  <!-- Primary Care Provider History Begins -->
-                  <div class="displayNone" id="PCPHistoryMessage" style="margin: 0px 14px;">
-                      
-                      <span>There are no history records </span>
-                      
-                  </div>
-                  <!-- Primary Care Provider History Ends -->
-                  <div class="twoColumnDiv" style="margin: 20px 0 0 0;">
-                      <div class="ColumnOne" style="width: auto;">
-                          <span id="spnIPAHistory" class="cursorHand">+ IPA/Group History</span>
-                      </div>
-                      <div class="ColumnTwo" style="clear: none; float: left; position: relative; top: 5px;">
-                          <span id="spnIPAHistoryText">Expand to view IPA/Group History</span>
-                      </div>
-                  </div>
-                  <!-- IPA/Group History Starts-->
-                  <div id="IPAHistoryMessage" class="displayNone" style="margin: 0px 14px;">
-                      
-                      <span>There are no history records </span>
-                      
-                  </div>
-                  <!-- IPA/Group History Ends-->
-              </div>
-              </div>
              </section>
 
              <script type="text/javascript">
              jQuery(function(){
-               jQuery('#default').show();
+               jQuery('#default').hide();
              
 
              jQuery('.single').click(function(){
