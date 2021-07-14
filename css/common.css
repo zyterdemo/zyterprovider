@@ -158,16 +158,29 @@ a.btn.btn-primary{
 
 .single
 {
-	cursor:pointer; 
-    margin: 5px;
-    border-bottom: 3px solid #1589EE;
-    outline: 1px gray;
-	box-sizing: border-box;
-    border: 1px solid transparent;
+	
+	
+
+	border: 1px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
 	display: block;
     padding: .5rem 1rem;
+	text-decoration: none;
+    background-color: transparent;
+	outline: none;
+}
+
+.single.active
+{
+	margin: 5px;
+	cursor:pointer; 
+	border: none;
+    border-bottom: 3px solid #1589EE;
+    background: #E7F3FD;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    
 }
 
 
