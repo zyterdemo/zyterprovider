@@ -278,7 +278,7 @@
                       <tr>
                         <td align="right">
                           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <input class="button" style="height: 25px; width: 60px; background-color: #0062cc; border-color: #005cbf; color: white;" id="btnSearch" type="button" value="Search" autocomplete="off"> &nbsp; &nbsp;
+                          <input type="button" value="Search" id="searchresult" style="height: 25px; width: 60px; background-color: #0062cc; border-color: #005cbf; color: white;"> &nbsp; &nbsp;
                             <input class="button" style="height: 25px; width: 60px; background-color: #0062cc; border-color: #005cbf; color: white;" id="btnClear" type="button" value="Clear" autocomplete="off" disabled> &nbsp; &nbsp;
                             <input class="button" style="height: 25px; width: 60px; background-color: #0062cc; border-color: #005cbf; color: white;" id="btnCancel" name="Cancel" type="submit" value="Cancel" autocomplete="off" disabled>
                            
@@ -303,7 +303,218 @@
       </div>
     </div>
 </div>
+<div style="margin: 10px 0 0;">
 
+</div>
+
+<div  id="result" style="display: none; margin-left: 20px; background-color: white; width:98%;">
+  <table width="100%" style="margin-left: 10px;">
+    <tbody>
+       
+<tr id="kendoSRA" >
+            <td width="100%" class="table-header_roster">
+                <div class="k-widget k-grid k-secondary" id="SRAGrid" data-role="grid">
+                  <div class="k-toolbar k-grid-toolbar k-grid-top">
+                    <div style="margin: 3px 0 0;"></div>
+                    <input class="button" style="margin-left: 10px; height: 25px; width: 130px; background-color: #0062cc; border-color: #005cbf; color: white;" id="btnClear" type="button" value="Print/Export to pdf" autocomplete="off" disabled>
+                    <div style="margin: 3px 0 0;"></div>
+                    </div>
+                    <table role="grid" border="1">
+                      <colgroup><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                      <thead align="center">
+                        <tr>
+                          <th class="k-header" data-field="AuthorizationID" data-title="Service Request/Auth No" scope="col" data-role="sortable">
+                          <a class="k-link" >Service Request/Auth No</a>
+                          </th>
+                          <th class="k-header" data-field="FullName" data-title="Member Name" scope="col" data-role="sortable">
+                            <a class="k-link" >Member Name</a>
+                            </th>
+                            <th class="k-header" data-field="ReqProviderFullName" data-title="Referred From" scope="col" data-role="sortable">
+                              <a class="k-link">Referred From</a>
+                              </th>
+                              <th class="k-header" data-field="ReferredProviderFullName" data-title="Referred To" scope="col" data-role="sortable">
+                                <a class="k-link" >Referred To</a>
+                                </th>
+                                <th class="k-header" data-field="EffDate" data-title="Service Request From" scope="col" data-role="sortable">
+                                  <a class="k-link">Service Request From</a>
+                                  </th>
+                                  <th class="k-header" data-field="TerminationDate" data-title="Service Request To" scope="col" data-role="sortable">
+                                    <a class="k-link" >Service Request To</a>
+                                    </th>
+                                    <th class="k-header" data-field="Referraldate" data-title="Request Submission Date" scope="col" data-role="sortable">
+                                      <a class="k-link">Request Submission Date</a>
+                                      </th>
+                                      <th class="k-header" data-field="HippaDescription" data-title="Status" scope="col" data-role="sortable">
+                                        <a class="k-link">Status</a>
+                                        </th>
+                                        <th class="k-header" data-field="UnitsApproved" data-title="Units Approved" scope="col" data-role="sortable">
+                                          <a class="k-link">Units Approved</a>
+                                          </th>
+                                          <th class="k-header" data-field="UnitsClaimed" data-title="Units Claimed" scope="col" data-role="sortable">
+                                            <a class="k-link">Units Claimed</a>
+                                            </th>
+                                            <th class="k-header" data-field="RemainingUnits" data-title="Remaining Units" scope="col" data-role="sortable">
+                                              <a class="k-link" >Remaining Units</a>
+                                              </th>
+                                              </tr>
+                       </thead>
+                       <tbody align="center">
+                         <tr data-uid="a9f8e09b-c301-4eaf-8788-64f1842f0daf" role="row">
+                           <td role="gridcell">
+                             <a id="lnk2113990002">2113990002</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/19/2021</td>
+                          <td role="gridcell">08/17/2021</td>
+                          <td role="gridcell">05/19/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr class="k-alt" data-uid="a853f839-8899-4737-8937-314dfe94d4c7" role="row">
+                          <td role="gridcell"><a id="lnk2114190004">2114190004</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/21/2021</td>
+                          <td role="gridcell">05/22/2021</td>
+                          <td role="gridcell">05/21/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr data-uid="ca560e49-f571-4727-be49-ffc5e1575dda" role="row">
+                          <td role="gridcell"><a id="lnk2114390000" >2114390000</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/23/2021</td>
+                          <td role="gridcell">08/21/2021</td>
+                          <td role="gridcell">05/23/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr class="k-alt" data-uid="9fd39ede-44f2-4c34-bad5-a58a5cb9332d" role="row">
+                          <td role="gridcell"><a id="lnk2114490000" >2114490000</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/24/2021</td>
+                          <td role="gridcell">08/22/2021</td>
+                          <td role="gridcell">05/24/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr data-uid="5fc1735f-2405-436d-b93a-3b833fcd59e0" role="row">
+                          <td role="gridcell">
+                          <a id="lnk2114690000">2114690000</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">08/24/2021</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr class="k-alt" data-uid="f0d6acf9-14f1-4eb3-be99-f2f2c73da3a8" role="row">
+                          <td role="gridcell"><a id="lnk2114690001" >2114690001</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">08/24/2021</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr data-uid="5788d227-1fcb-4d12-b696-32feb975dd33" role="row">
+                          <td role="gridcell"><a id="lnk2114690002">2114690002</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">08/24/2021</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                        <tr class="k-alt" data-uid="ceab95c0-ab0a-487b-8bf5-4cade9748897" role="row">
+                          <td role="gridcell"><a id="lnk2114690003">2114690003</a></td>
+                          <td role="gridcell">USER018, TEST</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">BLUE RIDGE FIRE DISTRICT</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">08/24/2021</td>
+                          <td role="gridcell">05/26/2021</td>
+                          <td role="gridcell">Pended</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                          <td role="gridcell">0</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+                  <div style="margin: 20px 0 0;">
+
+                  </div>
+                  
+          <div class="k-pager-wrap k-grid-pager k-widget" data-role="pager">
+              
+              <span class="k-pager-input k-label">Page<input class="k-textbox">of 2</span>
+                  <span class="k-pager-sizes k-label">
+                    <span class="k-widget k-dropdown k-header" unselectable="on" role="listbox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-owns="" aria-disabled="false" aria-readonly="false" aria-busy="false">
+                     
+                 <select title="10" data-role="dropdownlist"  style=" width: 20px; height: 10px; border: 1px solid gray;">
+                           <option value="10" selected="selected">10</option>
+                           <option value="25">25</option>
+                           <option value="50">50</option>
+                           <option value="100">100</option>
+                           </select>
+                      </span>per page</span>
+                      <span class="k-pager-info k-label">Showing 1-10 of 19 </span>
+              </div>
+        </div>
+            </td>
+        </tr>
+        <tr>
+        
+
+        </tr>
+
+    </tbody>
+</table>
+<div style="margin: 20px 0 0;">
+
+</div>
+</div>
+<script>
+  document.getElementById("searchresult").addEventListener("click",function()
+  {
+    var a = document.getElementById("result");
+    if(a.style.display=="block")
+    {
+      a.style.display="none";
+    }
+    else{
+      
+      a.style.display="block";
+    }
+  })
+</script>
 
   <footer class="container-fluid main-footer" id="mainFooter"><div class="footer-links-area">
     <div class="links-box">
