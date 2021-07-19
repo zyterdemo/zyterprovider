@@ -19,7 +19,7 @@
 
   <header id="mainHeader">
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
-        <a class="navbar-brand main-logo" href="https://someshmca.github.io/zyterhealth/index.html"></a>
+        <a class="navbar-brand main-logo" href="./index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1" aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -42,21 +42,17 @@
               <a class="nav-link" href="./member-roster.html">Member Roster</a>
             </li>
             <li class="nav-item">
-              <!-- <a class="nav-link" href="#">Available Services</a> -->
               <a class="nav-link" href="./hedis-profile.html">Hedis Profile</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./links.html">Links</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./forms.html">Forms</a>
+              <a class="nav-link" href="./links-and-forms.html">Links & Forms</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./account-tools.html">Account Tools</a>
             </li>
           </ul>
           <div id="welcomeUser" class="welcome-user">
-            Welcome <span>Demo User</span>
+            Welcome <span>John</span>
           </div>
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
@@ -74,7 +70,7 @@
                 <svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg><!-- <i class="fas fa-user"></i> Font Awesome fontawesome.com -->
               </a>
               <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="headerUserDrop">
-                <a class="dropdown-item" href="https://someshmca.github.io/zyterhealth/profile.html">My Account</a>
+                <a class="dropdown-item" href="./my-account.html">My Account</a>
                 <a class="dropdown-item" href="./login.html">Logout</a>
               </div>
             </li>
@@ -98,61 +94,43 @@
   <div class="row">
     <div class="col-lg-10 col-md-9 col-sm-8 col-12">
       <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-12 col-12">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-12 p-0">
           <div class="my-schedule-wrap">
-            <div class="my-schedule-image">              
-            </div>
           <h2 class="my-schedule-h2">
-            My Schedule
+            Quick Member Eligibility search
           </h2>
-          <div class="schedule-area">
-              <div class="schedule-box">
-                <div class="schedule-date">
-                  <span class="schedule-day">27</span>
-                  <span class="schedule-month">Mar</span>
-                </div>
-                <div class="schedule-details">
-                  <div class="schedule-time">1:00 PM</div>
-                  <div class="scheduled-doctor">
-                    <div class="doctor-image">
-                      <img src="images/doctor-icon1.jpg"/>
-                    </div>
-                    <div class="doctor-details">
-                      <h5>Meeting with Dr. John</h5>
-                      <div class="doctor-contact-action">
-                        <span class="fas fa-comment"></span> 
-                        <span class="fas fa-phone"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- end of schedule-box -->
-              <div class="schedule-box">
-                <div class="schedule-date">
-                  <span class="schedule-day">27</span>
-                  <span class="schedule-month">Mar</span>
-                </div>
-                <div class="schedule-details">
-                  <div class="schedule-time">6:30 PM</div>
-                  <div class="scheduled-doctor">
-                    <div class="doctor-image">
-                      <img src="images/doctor-icon2.png"/>
-                    </div>
-                    <div class="doctor-details">
-                      <h5>Meeting with Dr. Jessy</h5>
-                      <div class="doctor-contact-action">
-                        <span class="fas fa-comment"></span> 
-                        <span class="fas fa-phone"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- end of schedule-box -->
-          </div> <!-- end of schedule-area -->          
-          <div class="book-appointment">
-            <a class="btn btn-primary" data-target="#bookAppointment" data-toggle="modal">
-              Book an Appointment
-            </a>
+          <br>
+          <div>
+            <input type="search" style="width: 250px; height: 30px; margin-left: 5px; " value="Search by Member ID"  >
+          </div>    
+          <div style="margin: 30px 0 0;">
+          </div>    
+          <div align="center">
+            <button style="width: 100px; height: 30px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;">
+              <a type="button" href="./member-details.html" style="color: white; text-decoration:  none;" > Search</a>
+             </button>
+          </div>
+          <div style="margin: 30px 0 0;">
+          </div>
+          <div>
+            <table width="100%">
+              <tbody><tr>
+                  <td><span style="margin-left: 10px; font-size: 20px;">Need an Authorization ?</span></td>
+                  </tr>
+                  <tr>
+                  <td>
+                    &nbsp;
+                    &nbsp;
+                  </td>
+                  </tr>
+                  <tr>
+                  <td align="center">
+                      <input type="button" style="width: 120px;  display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" id="btnCPTCodeLookUp" name="btnCPTCodeLookUp" value="Code Lookup Tool" autocomplete="off" disabled>
+                  </td>
+              </tr>
+          </tbody>
+        </table> 
+        <div style="margin: 30px 0 0;"></div>
           </div>
         </div> <!-- end of my-schedule-wrap -->
         </div>
@@ -266,21 +244,6 @@
             <div class="home-card">
               <div class="home-card-content">
                 <div class="home-card-icon">
-                    <img src="images/Icons/PNG/Incomplete Service Request-Authorization.png"/>
-                </div>
-                <div class="home-card-icon-text">
-                  <p>Open Incomplete Service Request/Authorization</p>
-                </div>
-              </div>
-              <div class="home-card-footer">
-                <button class="btn btn-light">
-                  Open
-                </button>
-              </div>
-            </div> <!-- end of home-card -->
-            <div class="home-card">
-              <div class="home-card-content">
-                <div class="home-card-icon">
                     <img src="images/Icons/PNG/Create Service Request-Authorization Template.png"/>
                 </div>
                 <div class="home-card-icon-text">
@@ -329,26 +292,11 @@
                     <img src="images/Icons/PNG/Link.png"/>
                 </div>
                 <div class="home-card-icon-text">
-                  <p>Links</p>
+                  <p>Links & Forms</p>
                 </div>
               </div>
               <div class="home-card-footer">
-                <button class="btn btn-light" href="links.html">
-                  View
-                </button>
-              </div>
-            </div> <!-- end of home-card -->
-            <div class="home-card">
-              <div class="home-card-content">
-                <div class="home-card-icon">
-                    <img src="images/Icons/PNG/Forms.png"/>
-                </div>
-                <div class="home-card-icon-text">
-                  <p>Forms</p>
-                </div>
-              </div>
-              <div class="home-card-footer">
-                <button class="btn btn-light">
+                <button class="btn btn-light" href="links-and-forms.html">
                   View
                 </button>
               </div>
