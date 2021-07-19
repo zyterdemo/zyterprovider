@@ -19,7 +19,7 @@
 
   <header id="mainHeader">
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color main-header-navbar">
-        <a class="navbar-brand main-logo" href="index.html"></a>
+        <a class="navbar-brand main-logo" href="https://someshmca.github.io/zyterhealth/index.html"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainHeaderMenu1" aria-controls="mainHeaderMenu1" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -81,19 +81,8 @@
           </ul>
         </div>
       </nav>
-      <script>
-      /*  $(document).ready(function(){     
-         let navlinkhref = $(".navbar-nav .nav-item .nav-link").attr("href");
-          $("nav.navbar .navbar-nav .nav-item .nav-").click(
-            function(){
-              $("nav.navbar .navbar-nav .nav-item").removeClass("active");
-             $(this).addClass("active");       
-             alert(location.href)
-            }
-          );
-        })*/
-      </script></header>
-
+      </header>
+<form id="newForm">
 <div class="container-fluid main-content-body homepage-body">
   <div class="row">
     <div class="col-lg-10 col-md-9 col-sm-9 col-12">
@@ -173,14 +162,14 @@
                             
                             <tr>
                               <td valign="center" align="middle" style="width:16%;" height="25px">
-                                    <span class="form-group" style="font-size:14px;">Date of Birth:&nbsp;&nbsp;</span>
+                                    <span class="form-group"  style="font-size:14px;">Date of Birth:&nbsp;&nbsp;</span>
                                 </td>
                                 <td align="left">
-                                    <input class="form-control" id="txtDOB" maxlength="10" name="txtDOB" type="text" value="" autocomplete="off">
+                                    <input class="form-control" id="txtDOB" maxlength="10" name="txtDOB" type="date" value="" autocomplete="off">
                                     
                                     </td>
                                     <td>
-                                      <span>(mmddyyyy)</span>
+                                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                                   </td>
                                   
                             </tr>
@@ -253,7 +242,7 @@
           
             <div style="margin-left: 30px; ">
               <span style="font-size:14px;">To see member eligibility as of certain date enter date here:</span> 
-                          <input class="form-text-search" id="txtEligibility" maxlength="10" name="txtEligibility" type="text" value="07/01/2021" autocomplete="off">(mmddyyyy)
+                          <input class="form-text-search" id="txtEligibility" maxlength="10" name="txtEligibility" type="date" value="07/01/2021" autocomplete="off">
             </div>
             <div>
               &nbsp;&nbsp;
@@ -265,9 +254,9 @@
             <div>
               <div class="width55p" colspan="4" valign="middle" align="middle" >
                 <div >
-                  <input id="btnSearchMem" onclick="parent.location='./member-details.html'" tabindex="0" type="submit" value="Search" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
+                  <input id="btnSearchMem" onclick="parent.location='./Member Details.html'" tabindex="0" type="submit" value="Search" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
                   &nbsp;&nbsp;
-                    <input  id="btnClearNew" tabindex="0" type="submit" name="clear" value="Clear All" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
+                    <input  id="btnClearNew" tabindex="0" type="submit" onclick="newFunction()" name="clear" value="Clear All" style="width: 100px; display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-image: url('./images/butn_backg_158px.png'); background-repeat: no-repeat;" autocomplete="off">
                   </div>    
              </div> 
             </div>
@@ -318,6 +307,12 @@
       </div>
   </div>
 </div>
+</form>
+<script>
+   function newFunction() {
+            document.getElementById("newForm").reset();
+         }
+</script>
   
 <footer class="container-fluid main-footer" id="mainFooter"><div class="footer-links-area">
     <div class="links-box">
