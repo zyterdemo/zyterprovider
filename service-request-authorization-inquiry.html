@@ -318,8 +318,90 @@
                 <div class="k-widget k-grid k-secondary" id="SRAGrid" data-role="grid">
                   <div class="k-toolbar k-grid-toolbar k-grid-top">
                     <div style="margin: 3px 0 0;"></div>
-                    <input class="button" style="margin-left: 10px; height: 25px; width: 130px; background-color: #0062cc; border-color: #005cbf; color: white;" id="btnClear" type="button" value="Print/Export to pdf" autocomplete="off" disabled>
-                    <div style="margin: 3px 0 0;"></div>
+                      
+                    <style>
+                        
+                        
+                      /* The Modal (background) */
+                      .modal {
+                        display: none; /* Hidden by default */
+                        position: fixed; /* Stay in place */
+                        z-index: 1; /* Sit on top */
+                        padding-top: 100px; /* Location of the box */
+                        left: 0;
+                        top: 0;
+                        width: 100%; /* Full width */
+                        height: 100%; /* Full height */
+                        overflow: auto; /* Enable scroll if needed */
+                        background-color: rgb(0,0,0); /* Fallback color */
+                        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                      }
+                      
+                      /* Modal Content */
+                      .modal-content {
+                        background-color: #fefefe;
+                        margin: auto;
+                        padding: 20px;
+                        border: 1px solid #888;
+                        width: 80%;
+                      }
+                      
+                      /* The Close Button */
+                      .close {
+                        color: #aaaaaa;
+                        float: right;
+                        font-size: 28px;
+                        font-weight: bold;
+                      }
+                      
+                      .close:hover,
+                      .close:focus {
+                        color: #000;
+                        text-decoration: none;
+                        cursor: pointer;
+                      }
+                      </style>
+                      <input id="myBtn" type="button" value="Print/ Export to PDF" style="width: 120px;
+                      height: 26px; background-color: #007bff; color: white;">
+                  
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                          
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Feature To be added in upcomming Updates</p>
+                          </div>
+                        
+                        </div>
+                        
+                        <script>
+                        // Get the modal
+                        var modal = document.getElementById("myModal");
+                        
+                        // Get the button that opens the modal
+                        var btn = document.getElementById("myBtn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("close")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btn.onclick = function() {
+                          modal.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          modal.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == modal) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>  <div style="margin: 3px 0 0;"></div>
                     </div>
                     <table role="grid" border="1">
                       <colgroup><col><col><col><col><col><col><col><col><col><col><col></colgroup>
