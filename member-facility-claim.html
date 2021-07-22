@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Zyter Health: Member Facility Claims</title>
+    <title>Zyter Health:: Claims</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -93,14 +93,31 @@
       </script></header>
 
         <!--Content-->
-        
+        <form id="newForm">      
 <div style=" background-color: white; border: 1px solid #E2E2E2; border-radius: 5px;
 position: relative; margin: 0.5cm; padding: 0.5cm" >
    <h4 style="color: #3E3E3E;  padding: 5px 15px;
    border-left: 4px solid #4193CE;
-   font-size: 16px;"><b>Claims</b></h4>
+   font-size: 16px;"><b>Claims UB-04</b></h4>
 
 <br> <br>
+<div>
+
+                            
+  &nbsp;&nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/provider-facility-claim.html">
+    <input type="button" value="Next" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;float: left;">
+  </a>
+  <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+
+    
+    
+       <br><br>
+
+</div>
+<br>
    <a title="MyRates" href="https://zyterdemo.github.io/zyterprovider/member-facility-claim.html" style="text-decoration: none">
     <span class="cursor-pointer" style="border: none;
     border-bottom: 3px solid #1589EE;
@@ -448,8 +465,12 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                                 &nbsp;&nbsp;
                                 <a href="https://zyterdemo.github.io/zyterprovider/provider-facility-claim.html">
                                   <input type="button" value="Next" style="width: 109px;
-                                  height: 26px; background-color: #007bff; color: white;">
+                                  height: 26px; background-color: #007bff; color: white;float: left;">
                                 </a>
+                                <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+                                  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+
+                                  
                                   
                                      <br><br>
       
@@ -457,6 +478,12 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
 
 
                         </div>
+                        </form>
+                        <script>
+                          function newFunction() {
+                                   document.getElementById("newForm").reset();
+                                }
+                       </script>
 
    <!--End of content -->
 
@@ -468,7 +495,7 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Overview</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Map</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Help &mp; User Guides</a></li>
-          <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">FAQ</a></li>
+          <li><a href="https://zyterdemo.github.io/zyterprovider/faq.html">FAQ</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Privacy & Security</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Terms and Conditions</a></li>                
         </ul>
