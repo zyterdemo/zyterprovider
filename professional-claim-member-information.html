@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Zyter Health: Professional Claim Member Information</title>
+    <title>Zyter Health:: Claims</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -98,9 +98,26 @@
 position: relative; margin: 0.5cm; padding: 0.5cm" >
    <h4 style="color: #3E3E3E;  padding: 5px 15px;
    border-left: 4px solid #4193CE;
-   font-size: 16px;"><b>Claims</b></h4>
+   font-size: 16px;"><b>Claims CMS-1500</b></h4>
 
 <br> <br>
+<div>
+
+                            
+  &nbsp;&nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
+    <input type="button" value="Next" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white; float: left;">
+  </a>
+  <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+    
+       <br><br>
+
+</div>
+<br>
+
+
    <a title="MyRates" href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html" style="text-decoration: none">
     <span class="cursor-pointer" style="border: none;
     border-bottom: 3px solid #1589EE;
@@ -113,7 +130,8 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
             <span id="spnMembers" class="cursor-pointer" style="font-size: 4.5mm;">Summary</span></a>
 <br> <br> <br>
 
-
+<form id="newForm">  
+  <div>
         <div style="    border-style: solid;
         border-width: 1px;
         border-color: #999999;
@@ -396,12 +414,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                             Patient Conditions</span></h1>
 
                                             <p>Is patient's condition related to the following? (check all that apply)</p><br>
-<!-- Employment	 Another Party Responsible	 Other Accident
- Auto Accident	Place(State):* 
-Select
-Accident Date:* 
-  (mm/dd/yyyy)
-Are there any patient condition dates that need to be entered? (eg:Last menstruation, X-ray,immunization,etc..)  Yes No-->
+
                                             <input type="checkbox" id="Employment">&nbsp; <label for="Employemnt">Employment &nbsp;&nbsp;</label>
                                             <input type="checkbox" id="Another Party Responsible"> &nbsp;<label for="Another Party Responsible">Another Party Responsible &nbsp;&nbsp;</label>
                                             <input type="checkbox" id="Other Accident"> &nbsp;<label for="Other Accident">Other Accident &nbsp;&nbsp;</label>
@@ -418,19 +431,7 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                         border-width: 1px;
                         border-color: #999999;
                         padding: 10px 10px 10px 10px;" >
-                        <!--Verify Required Information
-                             Patient Account Number:*	
- 	 
-                             Member Authorized Assignment of Benefit:*	 Yes    No	Provider Assignment code:	
-                               Select
-                            Release of Information:* Release of Information:*	
-I-Informed Consent to Release Medical Information for Conditions or Diagnoses Regulated by Federal Statutes
-	
-Release of Information:*	
-Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Data Related to a Claim
-
-                              Select
-                                   Prior Authorization Number:-->
+                       
 
                                    <h1><span style="font-style: normal; font-size: medium;     color: #3E3E3E;
                                     padding: 5px 15px;
@@ -457,8 +458,10 @@ Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Dat
                                 &nbsp;&nbsp;
                                 <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
                                   <input type="button" value="Next" style="width: 109px;
-                                  height: 26px; background-color: #007bff; color: white;">
+                                  height: 26px; background-color: #007bff; color: white; float: left;">
                                 </a>
+                                <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+                                height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
                                   
                                      <br><br>
                     
@@ -475,6 +478,13 @@ Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Dat
                        
 
                         </div>
+                      </div>
+                    </form>
+                    <script>
+                      function newFunction() {
+                               document.getElementById("newForm").reset();
+                            }
+                   </script>
 
    <!--End of content -->
 
@@ -486,7 +496,7 @@ Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Dat
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Overview</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Map</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Help &mp; User Guides</a></li>
-          <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">FAQ</a></li>
+          <li><a href="https://zyterdemo.github.io/zyterprovider/faq.html">FAQ</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Privacy & Security</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Terms and Conditions</a></li>                
         </ul>
