@@ -93,14 +93,38 @@
       </script></header>
 
           <!--Content-->
-        
+        <form id="newForm">  
 <div style=" background-color: white; border: 1px solid #E2E2E2; border-radius: 5px;
 position: relative; margin: 0.5cm; padding: 0.5cm" >
    <h4 style="color: #3E3E3E;  padding: 5px 15px;
    border-left: 4px solid #4193CE;
-   font-size: 16px;"><b>Claims</b></h4>
+   font-size: 16px;"><b>Claims UB-04</b></h4>
 
 <br> <br>
+
+<div>
+
+  &nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/summary-facility-claim.html">
+    <input type="button" value="Next" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white; float: left;">
+  </a>
+  &nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/member-facility-claim.html">
+    <input type="button" value="Previous" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;">
+  </a>
+  <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+     height: 26px; background-color: #007bff; color: white;float: right;">
+    
+       <br><br>
+
+
+
+
+
+</div>
+<br>
 <a title="MyRates" href="https://zyterdemo.github.io/zyterprovider/member-facility-claim.html" style="font-size: 4.5mm;">Member </span></a>
  &nbsp; <a id="linkMembers" title="Members" href="https://zyterdemo.github.io/zyterprovider/provider-facility-claim.html" style="color: #000000; text-decoration: none">
      <span id="spnMembers" class="cursor-pointer" style="border: none;
@@ -133,12 +157,15 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 <label style="width: 140px; text-align: center;">Last Name: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">First Name: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Middle Initial: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">TIN: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">NPI: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Address1: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">Address2: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">City: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">	State </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">Zip Code </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Taxonomy </label><input type="text">
 
@@ -170,23 +197,28 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                             <div>
                                 
                                 <br>
-                                <label style="width: 140px; text-align: center;">Type of Bill* </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Patient Control Number * </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Medical Record Number </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Document Control Number</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Revenue Code:* </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Revenue Code Description: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">HCPCS/HIPPS Rate Codes/HCPCS Modifiers: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">NDC: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Service Date:*</label><input type="date" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Service Units:*</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Total Charges:*</label><input type="text" style="width: 140px;">
+                                <label style="width: 140px; text-align: center;">Type of Bill* </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Patient Control Number * </label><input type="text">
+                                <label style="width: 140px; text-align: center;">Medical Record Number </label><input type="text">
+                                <br>
+                                <label style="width: 140px; text-align: center;">Document Control Number</label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Revenue Code:* </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Revenue Code Description: </label><input type="text">
+                                <br>
+                                <label style="width: 140px; text-align: center;">HCPCS/HIPPS Rate Codes/HCPCS Modifiers: </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">NDC: </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Service Date:*</label><input type="date">
+                                <br>
+                                <label style="width: 140px; text-align: center;">Service Units:*</label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Total Charges:*</label><input type="text" >
+                                <br>
                                 <label style="width: 140px; text-align: center;">Assignment of Benefits *</label>
                                 <select style="width: 137px;">
                                     <option>Yes</option>
                                     <option>No</option>
                                     <option>Not Applicable</option>
                                 </select>
+                                <br>
                                 <label style="width: 140px; text-align: center;">Release Of Information * </label>
                                 <select style="width: 137px;">
                                     <option>
@@ -208,10 +240,11 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                             Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Data Related to a Claim
                                             </option>
                                 </select>
-                                <label style="width: 140px; text-align: center;">Treatment Authorization Code: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Principal DX: </label><input type="text" style="width: 140px;">
+                                <label style="width: 140px; text-align: center;">Treatment Authorization Code: </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Principal DX: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;"> POA: </label>
-                                <select style="width: 140px;">
+                                <select style="width: 137px;">
                                     <option>Select</option>
                                     <option>Exempt</option>
                                     <option>N</option>
@@ -219,7 +252,7 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
-                                <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" style="width: 140px;">
+                                <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" >
                                 <label style="width: 140px; text-align: center;">POA: </label>
                                 <select style="width: 140px;">
                                     <option>Select</option>
@@ -229,12 +262,14 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
-                                <label style="width: 140px; text-align: center;">Admit Diagnosis: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Patient Reason For Visit Code:</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Prospective Payment System Code (PPS Code):</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">ECI:</label><input type="text" style="width: 140px;">
+                                <br>
+                                <label style="width: 140px; text-align: center;">Admit Diagnosis: </label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Patient Reason For Visit Code:</label><input type="text" >
+                                <label style="width: 140px; text-align: center;">Prospective Payment System Code (PPS Code):</label><input type="text" >
+                                <br>
+                                <label style="width: 140px; text-align: center;">ECI:</label><input type="text" >
                                 <label style="width: 140px; text-align: center;">POA </label>
-                                <select style="width: 140px;">
+                                <select style="width: 137px;">
                                     <option>Select</option>
                                     <option>Exempt</option>
                                     <option>N</option>
@@ -242,8 +277,9 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
-                                <label style="width: 140px; text-align: center;">Principal Procedure Date</label><input type="date" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Principal Procedure Code </label><input type="text" style="width: 140px;">
+                                <br>
+                                <label style="width: 140px; text-align: center;">Principal Procedure Date</label><input type="date" style="width: 150px;">
+  <label style="width: 140px; text-align: center;">Principal Procedure Code </label><input type="text">
                                 
                               
 
@@ -311,13 +347,15 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
             &nbsp;
             <a href="https://zyterdemo.github.io/zyterprovider/summary-facility-claim.html">
               <input type="button" value="Next" style="width: 109px;
-              height: 26px; background-color: #007bff; color: white;">
+              height: 26px; background-color: #007bff; color: white; float: left;">
             </a>
             &nbsp;&nbsp;
             <a href="https://zyterdemo.github.io/zyterprovider/member-facility-claim.html">
               <input type="button" value="Previous" style="width: 109px;
               height: 26px; background-color: #007bff; color: white;">
             </a>
+            <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+               height: 26px; background-color: #007bff; color: white;float: right;">
               
                  <br><br>
 
@@ -330,7 +368,12 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
 
    </div>
 
-
+  </form>
+  <script>
+    function newFunction() {
+             document.getElementById("newForm").reset();
+          }
+ </script>
 
 <br>
    <!--Endcontent-->
