@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>Zyter Health: Professional Claim Provider Information</title>
+    <title>Zyter Health:: Claims</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -93,14 +93,34 @@
       </script></header>
 
           <!--Content-->
-        
+          <form id="newForm">    
 <div style=" background-color: white; border: 1px solid #E2E2E2; border-radius: 5px;
 position: relative; margin: 0.5cm; padding: 0.5cm" >
    <h4 style="color: #3E3E3E;  padding: 5px 15px;
    border-left: 4px solid #4193CE;
-   font-size: 16px;"><b>Claims</b></h4>
-
+   font-size: 16px;"><b>Claims CMS-1500</b></h4>
+   
 <br> <br>
+
+<div>
+
+  &nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-summary.html">
+    <input type="button" value="Next" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white; float: left;">
+  </a>
+  &nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html">
+    <input type="button" value="Previous" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white; ">
+    </a> 
+     <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+     height: 26px; background-color: #007bff; color: white;float: right; ">
+  
+    
+  <br><br>
+</div>
+<br>
 <a title="MyRates" href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html" style="font-size: 4.5mm;">Member </span></a>
  &nbsp; <a id="linkMembers" title="Members" href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html" style="color: #000000; text-decoration: none">
      <span id="spnMembers" class="cursor-pointer" style="border: none;
@@ -133,12 +153,17 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 <label style="width: 140px; text-align: center;">Last Name: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">First Name: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Middle Initial: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">TIN: </label><input type="text">
+
                                 <label style="width: 140px; text-align: center;">NPI: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Address1: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">Address2: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">City: </label><input type="text">
+                               
                                 <label style="width: 140px; text-align: center;">	State </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">Zip Code </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Taxonomy </label><input type="text">
 
@@ -176,6 +201,7 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                 <label style="width: 140px; text-align: center;">NPI: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Last Name: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">First Name: </label><input type="text">
+                                <br>
                                 <label style="width: 140px; text-align: center;">Middle Initial: </label><input type="text">
                                 <label style="width: 140px; text-align: center;">Zip Code </label><input type="text">
                               
@@ -384,13 +410,16 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
             &nbsp;
             <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-summary.html">
               <input type="button" value="Next" style="width: 109px;
-              height: 26px; background-color: #007bff; color: white;">
+              height: 26px; background-color: #007bff; color: white; ">
             </a>
-            &nbsp;&nbsp;
+            &nbsp;
             <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html">
               <input type="button" value="Previous" style="width: 109px;
               height: 26px; background-color: #007bff; color: white;">
-            </a>
+              </a>
+               <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+               height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+            
               
                  <br><br>
 
@@ -402,6 +431,13 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
 
 
    </div>
+  </form>
+  <script>
+    function newFunction() {
+             document.getElementById("newForm").reset();
+          }
+ </script>
+
 
 
 
@@ -417,7 +453,7 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Overview</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Site Map</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Help &mp; User Guides</a></li>
-          <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">FAQ</a></li>
+          <li><a href="https://zyterdemo.github.io/zyterprovider/faq.html">FAQ</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Privacy & Security</a></li>
           <li><a href="https://zyterdemo.github.io/zyterprovider/demo-page.html">Terms and Conditions</a></li>                
         </ul>
