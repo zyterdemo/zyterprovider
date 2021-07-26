@@ -93,7 +93,7 @@
       </script></header>
 
         <!--Content-->
-        
+        <form id="newForm">  
 <div style=" background-color: white; border: 1px solid #E2E2E2; border-radius: 5px;
 position: relative; margin: 0.5cm; padding: 0.5cm" >
    <h4 style="color: #3E3E3E;  padding: 5px 15px;
@@ -109,8 +109,16 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
     <input type="button" value="Next" style="width: 109px;
     height: 26px; background-color: #007bff; color: white; float: left;">
   </a>
-  <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+  <a href="./index.html"><input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
+ 
+  <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
   height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+   <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+   height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+ <!-- <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">-->
+
     
        <br><br>
 
@@ -130,7 +138,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
             <span id="spnMembers" class="cursor-pointer" style="font-size: 4.5mm;">Summary</span></a>
 <br> <br> <br>
 
-<form id="newForm">  
+
   <div>
         <div style="    border-style: solid;
         border-width: 1px;
@@ -197,7 +205,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                         </td>
                        
                         <td>
-                            <input maxlength="25" tabindex="1" type="text" value="000000001" autocomplete="off">
+                            <input maxlength="25" tabindex="1" type="text" value="000000001" autocomplete="off" >
                         </td>
                         
                         <td>
@@ -222,14 +230,14 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 &nbsp;Last Name: <span class="star">*</span></label>
                         </td>
                         <td>
-                            <input name="MemberLastNameForSearch" tabindex="2" type="text" value="" autocomplete="off">
+                            <input name="MemberLastNameForSearch" tabindex="2" type="text" value="" autocomplete="off" >
                         </td>
                         <td>
                             <label>
                                 &nbsp;First Name: <span class="star">*</span></label>
                         </td>
                         <td>
-                            <input  name="MemberFirstNameForSearch" tabindex="2" type="text" value="" autocomplete="off">
+                            <input  name="MemberFirstNameForSearch" tabindex="2" type="text" value="" autocomplete="off" >
                         </td>
                         <td>
                             <label>
@@ -253,7 +261,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                     <tr height="25">
                         <td>
                             <label title="Please Enter Date in mm/dd/yyyy format" class="marginleft">
-                                Service From Date:<span class="star">*</span></label>
+                                Service From Date:<span class="star"></span></label>
                         </td>
                         <td>
                             <input  maxlength="10" name="HCFAHeader.ServiceFromDate" tabindex="3" type="date" value="7/1/2021" autocomplete="off">
@@ -265,7 +273,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                         </td>
                         <td width="15%"  valign="middle" colspan="1">
                             <label>
-                                Service To Date:</label><span class="star">*</span>
+                                Service To Date:</label><span class="star"></span>
                         </td>
                         <td>
                             <input maxlength="10" name="HCFAHeader.ServiceToDate" tabindex="3" type="date" value="7/1/2021" autocomplete="off">
@@ -419,7 +427,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                             <input type="checkbox" id="Another Party Responsible"> &nbsp;<label for="Another Party Responsible">Another Party Responsible &nbsp;&nbsp;</label>
                                             <input type="checkbox" id="Other Accident"> &nbsp;<label for="Other Accident">Other Accident &nbsp;&nbsp;</label>
                                             <input type="checkbox" id="Auto Accident">&nbsp; <label for="Auto Accident">Auto Accident &nbsp;&nbsp;</label>
-                                            <label>&nbsp;&nbsp;Place(State):*</label>&nbsp;<select><option>Select</option></select>
+                                            <label>&nbsp;&nbsp;Place(State):</label>&nbsp;<select><option>Select</option></select>
                                             <br>
                                             <p>Are there any patient condition dates that need to be entered? (eg:Last menstruation, X-ray,immunization,etc..)</p>
                                             <input type="radio">&nbsp; <label>Yes &nbsp;&nbsp; </label> &nbsp;<input type="radio"> &nbsp;<label>No</label>
@@ -436,7 +444,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                    <h1><span style="font-style: normal; font-size: medium;     color: #3E3E3E;
                                     padding: 5px 15px;
                                     border-left: 4px solid #4193CE;">Verify Required Information</span></h1>
-                                   <label for="Ac No">Patient Account Number:*	</label>&nbsp; <input type="text" id="Ac No">
+                                   <label for="Ac No">Patient Account Number:*	</label>&nbsp; <input type="text" id="Ac No" >
                                    <br>
                                    <label>Member Authorized Assignment of Benefit:*</label>&nbsp; &nbsp; 
                                    <label>Yes</label>&nbsp; <input type="radio"> <label>No</label>&nbsp; <input type="radio"> 
@@ -460,8 +468,14 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                   <input type="button" value="Next" style="width: 109px;
                                   height: 26px; background-color: #007bff; color: white; float: left;">
                                 </a>
-                                <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+                                <a href="./index.html"><input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+                                  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
+                               
+                                <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
                                 height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+                                 <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+                                 height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+                               
                                   
                                      <br><br>
                     
