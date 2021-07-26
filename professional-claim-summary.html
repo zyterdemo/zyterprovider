@@ -101,17 +101,125 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
    font-size: 16px;"><b>Claims CMS-1500</b></h4>
 
 <br><br>
-<div><button id="myBtn" style="width: 109px;
-  height: 26px; background-color: #007bff; color: white; float: right;">Submit Claim</button>
+<div>
   &nbsp;
   
-  <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
-  <input type="button" value="Previous" style="width: 109px;
-  height: 26px; background-color: #007bff; color: white; ">
-  </a>
+
+  &nbsp;
+  <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html">
+    <input type="button" value="Previous" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white; ">
+    </a> 
+
+    <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
+      <input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+       height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
+        <input id="sfb" type="button" name="sfb" value="Save For Batch"  style="width: 109px;
+        height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+        <button id="myBtnn" style="width: 109px;
+        height: 26px; background-color: #007bff; color: white; float: right; margin-right: 5px;">Submit Claim</button>
+         <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
+         height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+           <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+           height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+    
+    <input id="print" type="button" name="print" value="Print"  style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px; opacity: 0.7;" disabled>
+    
+  
+   
+    
+     
+    
+  
   <br>
   </div>
 <br>
+
+<!-- Popup code--><style>
+                        
+                        
+                        /* The Modal (background) */
+                        .mode {
+                          display: none; /* Hidden by default */
+                          position: fixed; /* Stay in place */
+                          z-index: 1; /* Sit on top */
+                          padding-top: 100px; /* Location of the box */
+                          left: 0;
+                          top: 0;
+                          width: 100%; /* Full width */
+                          height: 100%; /* Full height */
+                          overflow: auto; /* Enable scroll if needed */
+                          background-color: rgb(0,0,0); /* Fallback color */
+                          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                        }
+                        
+                        /* Modal Content */
+                        .mode-content {
+                          background-color: #fefefe;
+                          margin: auto;
+                          padding: 20px;
+                          border: 1px solid #888;
+                          width: 80%;
+                        }
+                        
+                        /* The Close Button */
+                        .closee {
+                          color: #aaaaaa;
+                        
+                          font-size: 28px;
+                          font-weight: bold;
+                        }
+                        
+                        .closee:hover,
+                        .closee:focus {
+                          color: #000;
+                          text-decoration: none;
+                          cursor: pointer;
+                        }
+                        </style>
+                        <!-- The Modal -->
+                        <div id="myMode" class="mode">
+                        
+                          <!-- Modal content -->
+                          <div class="mode-content">
+                            <span class="closee">&times;</span>
+                            <p>Claim Submitted Successfully</p>
+                          </div>
+                        
+                        </div>
+                        
+                        <script>
+                        // Get the modal
+                        var mode = document.getElementById("myMode");
+                        
+                        // Get the button that opens the modal
+                        var btnn = document.getElementById("myBtnn");
+                        
+                        // Get the <span> element that closes the modal
+                        var span = document.getElementsByClassName("closee")[0];
+                        
+                        // When the user clicks the button, open the modal 
+                        btnn.onclick = function() {
+                          mode.style.display = "block";
+                        }
+                        
+                        // When the user clicks on <span> (x), close the modal
+                        span.onclick = function() {
+                          mode.style.display = "none";
+                        }
+                        
+                        // When the user clicks anywhere outside of the modal, close it
+                        window.onclick = function(event) {
+                          if (event.target == mode) {
+                            modal.style.display = "none";
+                          }
+                        }
+                        </script>
+                        
+                    
+                         
+                      
 
 <a title="MyRates" href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html" style="font-size: 4.5mm;">Member </span></a>
  &nbsp; <a id="linkMembers" title="Members" href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html" style="color: #000000; text-decoration: none">
@@ -394,28 +502,28 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                       <th></th>
                       <th style="text-align: center; width: 80px; border-spacing: 1cm;">Service From Date *</th>
                       <th style="text-align: center; width: 80px;">Service To Date *</th>
-                      <th style="text-align: center; width: 80px;">Place of Service *</th>
+                      <th style="text-align: center; width: 80px;">Place of Service </th>
                       <th style="text-align: center; width: 80px;">Emergency</th>
-                      <th style="text-align: center; width: 80px;">Procedure Code *</th>
-                      <th style="text-align: center; width: 80px;">Diagnosis Code Reference *</th>
-                      <th style="text-align: center; width: 80px;">Charges *</th>
-                      <th style="text-align: center; width: 80px;">Units of Measurement *</th>
-                      <th style="text-align: center; width: 80px;">Quantity *</th>
+                      <th style="text-align: center; width: 80px;">Procedure Code </th>
+                      <th style="text-align: center; width: 80px;">Diagnosis Code Reference </th>
+                      <th style="text-align: center; width: 80px;">Charges </th>
+                      <th style="text-align: center; width: 80px;">Units of Measurement </th>
+                      <th style="text-align: center; width: 80px;">Quantity </th>
                       <th style="text-align: center; width: 80px;">EPSDT Family Plan</th>
               
                     </tr>
                     <tr style="text-align: center;">
                      <td>1</td>
-                     <td><input type="date" style="width: 2.2cm;"></td>
-                     <td><input type="date" style="width: 2.2cm;"></td>
+                     <td><input  value="01/01/2021" style="width: 2.2cm;"></td>
+                     <td><input  value="07/01/2021" style="width: 2.2cm;"></td>
                      <td><input type="text" style="width: 2.2cm;"></td>
                      <td><select><option>No</option><option>Yes</option></select></td>
                      <td><input type="text" style="width: 2.2cm;"></td>
                      <td><input type="text" style="width: 2.2cm;"></td>
                      <td><input type="text" style="width: 2.2cm;"></td>
-                     <td><select><option>Select</option><option>UN</option><option>MJ</option><option>F2</option></select></td>
+                     <td><input type="text" value="MJ" style="width: 2.2cm;"></td>
                      <td><input type="text" style="width: 2.2cm;"></td>
-                     <td><select><option>No</option><option>Yes</option></option><option>None</option></select></td>
+                     <td><input type="text" value="Yes" style="width: 2.2cm;"></td>
                     </tr>  
               
               </table></div></div>
@@ -480,14 +588,34 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                        
                         
                         <!-- Trigger/Open The Modal -->
-                        <button id="myBtn" style="width: 109px;
-                        height: 26px; background-color: #007bff; color: white; float: right;">Submit Claim</button>
-                        &nbsp;
+                        <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-member-information.html">
+                          <input type="button" value="Previous" style="width: 109px;
+                          height: 26px; background-color: #007bff; color: white; ">
+                          </a> 
+                          <a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
+                            <input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+                             height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
 
-<a href="https://zyterdemo.github.io/zyterprovider/professional-claim-provider-information.html">
-  <input type="button" value="Previous" style="width: 109px;
-  height: 26px; background-color: #007bff; color: white; ">
-</a>
+                             <input id="sfb" type="button" name="sfb" value="Save For Batch"  style="width: 109px;
+                            height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+
+                             <button id="myBtn" style="width: 109px;
+                              height: 26px; background-color: #007bff; color: white; float: right; margin-right: 5px;">Submit Claim</button>
+
+                            <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
+                             height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+
+                               <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+                                height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+ 
+                          <input id="print" type="button" name="print" value="Print"  style="width: 109px;
+                          height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px; opacity: 0.7;" disabled >
+                          
+                          
+                         
+                           
+                         
+                         
                         
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
