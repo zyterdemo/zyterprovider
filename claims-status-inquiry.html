@@ -90,6 +90,7 @@
       );
     })*/
   </script></header>
+  <form id="newForm">
       
       <!-- Code For Claims Search-->
          <div class="claimsearch_flip" style="margin-top: 10px;background-color:#f5fbff; margin-top: 10px; margin-right: 30px;
@@ -214,13 +215,20 @@
             </div>
                <!-- End pof Code for the front content-->
                <br> <br>
-
+               <a href="#topdiv"><input type="button" value="Cancel" id="cancel" style="   width: 109px;
+                height: 26px; background-color: #007bff; font: bolder; color: white; float: right; margin-right: 5px;"></a>
+               <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
+               height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
            <a href="#result"><input type="button" value="Search" id="searchresult" style=" width: 109px;
-            height: 26px; background-color: #007bff; font: bold; color: white; float: right;"></a> 
-               &nbsp; <a href="#topdiv"><input type="button" value="Cancel" id="cancel" style="   width: 109px;
-                height: 26px; background-color: #007bff; font: bolder; color: white; float: right; margin-right: 5px;"></a> &nbsp
+            height: 26px; background-color: #007bff; font: bold; color: white; float: right; margin-right: 5px;"></a> 
+               &nbsp; &nbsp
 
                      <!-- Js Code-->
+                     <script>
+                      function newFunction() {
+                               document.getElementById("newForm").reset();
+                            }
+                   </script>
       <script>
         document.getElementById("searchresult").addEventListener("click",function()
         {
@@ -417,7 +425,7 @@
               </div>
 
             </div>
-         </div>
+         </div> </form>
 
       <!-- Code For Claims Search-->
 
