@@ -104,14 +104,17 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
 <div>
 
                             
-  &nbsp;&nbsp;
   <a href="https://zyterdemo.github.io/zyterprovider/provider-facility-claim.html">
     <input type="button" value="Next" style="width: 109px;
     height: 26px; background-color: #007bff; color: white;float: left;">
   </a>
-  <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
-    height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
-
+  <a href="./index.html"><input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+    height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
+ 
+  <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
+  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+   <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+   height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
     
     
        <br><br>
@@ -196,7 +199,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                         </td>
                        
                         <td>
-                            <input maxlength="25" tabindex="1" type="text" value="000000001" autocomplete="off">
+                            <input maxlength="25" tabindex="1" type="text" value="000000001" autocomplete="off" >
                         </td>
                         
                         <td>
@@ -221,21 +224,21 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 &nbsp;Last Name: <span class="star">*</span></label>
                         </td>
                         <td>
-                            <input name="MemberLastNameForSearch" tabindex="2" type="text" value="" autocomplete="off">
+                            <input name="MemberLastNameForSearch" tabindex="2" type="text" value="" autocomplete="off" >
                         </td>
                         <td>
                             <label>
                                 &nbsp;First Name: <span class="star">*</span></label>
                         </td>
                         <td>
-                            <input  name="MemberFirstNameForSearch" tabindex="2" type="text" value="" autocomplete="off">
+                            <input  name="MemberFirstNameForSearch" tabindex="2" type="text" value="" autocomplete="off" >
                         </td>
                         <td>
                             <label>
                                 &nbsp;DOB: <span class="star">*</span></label>
                         </td>
                         <td >
-                            <input name="MemberDOBSearch" tabindex="2" type="date" value="" autocomplete="off">
+                            <input name="MemberDOBSearch" tabindex="2" type="date" value="" autocomplete="off" >
                             
                             
                             
@@ -267,7 +270,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 Service To Date:</label><span class="star">*</span>
                         </td>
                         <td>
-                            <input maxlength="10" name="HCFAHeader.ServiceToDate" tabindex="3" type="date" value="7/1/2021" autocomplete="off">
+                            <input maxlength="10" name="HCFAHeader.ServiceToDate" tabindex="3" type="date" value="7/1/2021" autocomplete="off" >
                         
                             
                             
@@ -399,7 +402,7 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
 
                                    <h1><span style="font-style: normal; font-size: medium;     color: #3E3E3E;
                                     padding: 5px 15px;
-                                    border-left: 4px solid #4193CE;">Type of Bill*</span> <input type="text"></h1>
+                                    border-left: 4px solid #4193CE;">Type of Bill*</span> <input type="text" ></h1>
                                    
                                    
   
@@ -441,8 +444,8 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                                     <option>No Information Available</option>
                                 
                                 </select>
-                                <label style="width: 140px; text-align: center;">Admission Source:* </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Admission Hour:*: </label><input type="text" style="width: 140px;">
+                                <label style="width: 140px; text-align: center;">Admission Source:* </label><input type="text" style="width: 140px;" >
+                                <label style="width: 140px; text-align: center;">Admission Hour:*: </label><input type="text" style="width: 140px;" >
                                 <label style="width: 140px; text-align: center;">Condition Code: </label><input type="text" style="width: 140px;">
                                 <label style="width: 140px; text-align: center;">Occurrence Codes: </label><input type="text" style="width: 140px;">
                                 <label style="width: 140px; text-align: center;">Occurrence Date: </label><input type="date" style="width: 140px;">
@@ -467,8 +470,14 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                                   <input type="button" value="Next" style="width: 109px;
                                   height: 26px; background-color: #007bff; color: white;float: left;">
                                 </a>
-                                <input id="btnClearNew" type="button" name="clear" value="Clear All" onclick="newFunction()" style="width: 109px;
-                                  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+                                
+                                <a href="./index.html"><input id="btn" type="button" name="clear" value="Cancel" style="width: 109px;
+                                  height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;"></a> 
+                               
+                                <input id="sot" type="button" name="sot" value="Save As Tempelate"  style="width: 109px;
+                                height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
+                                 <input id="sfl" type="button" name="sfl" value="Save For Later"  style="width: 109px;
+                                 height: 26px; background-color: #007bff; color: white;float: right; margin-right: 5px;">
 
                                   
                                   
