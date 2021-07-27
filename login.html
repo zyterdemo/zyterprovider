@@ -43,18 +43,19 @@
                         <h5>New User?
                             <a href="#" onclick="registerHere()">Register</a>
                         </h5>
+                        
                         <div class="login-form">
                             <div class="form-group">
                                 <label>
                                 Username
                                 </label>
-                                <input type="text" class="form-control" name="fullname" value="John"/>
+                                <input type="text" id="user" class="form-control" name="fullname" value="" required/>
                             </div>
                             <div class="form-group">
                                 <label>
                                     Password
                                 </label>
-                                <input type="password" class="form-control" name="fullname" placeholder="Must be atleast 6 characters" value="John123"/>
+                                <input type="password" id="pwd"class="form-control" name="fullname" placeholder="Must be atleast 6 characters" value="" required/>
                             </div>                        
                             <div class="custom-control custom-checkbox mb-3">
                                 <input type="checkbox" class="custom-control-input" id="customCheck" name="emailupdates">
@@ -62,10 +63,33 @@
                                     Sign up for email updates.
                                 </label>
                             </div>
-                            <div class="form-group">
-                                <a type="button" class="btn btn-primary signup-btn" href="index.html">
+                            <div>
+                                <button type="submit" onclick="cllick()" class="btn btn-primary signup-btn" >
                                     Sign In
-                                </a>   
+                                </button> 
+                                <script>
+                                    function cllick()
+                                    {
+                                         var username=document.getElementById('user').value;
+                                         var pass = document.getElementById('pwd').value;
+                                         if(username=="")
+                                         {
+                                             window.alert("Enter Your Username");
+                                         }
+
+                                         else if(pass==""){
+                                            window.alert("Enter Your Password");
+                                         }
+                                         else if(pass.length < 6){
+                                            window.alert("Password must contain 6 character");
+                                         }
+                                         else{
+                                            window.location.href="https://zyterdemo.github.io/zyterprovider/index.html";
+
+                                         }
+                                       
+                                    }
+                                </script>  
                             </div>
                             <div class="flex-sb">
                                 <span onclick="forgotPassword('forgotPwdStates')">Forgot Password?</span>
