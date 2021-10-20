@@ -213,8 +213,7 @@
                     <label for="AuthorizationMemberFName">
                         &nbsp;Date of Birth: <span class="star">*</span>
                     </label>
-                    <input id="MemberFirstNameForSearch" name="MemberFirstNameForSearch" tabindex="3" type="text" value="" autocomplete="off">
-                  mmddyyyy
+                    <input type="date">
                 </td>
                  
               </tr>
@@ -282,9 +281,9 @@
                             <td align="left" class="width20p">
                               <input  id="AuthorizationMemberID" style="margin-left: 40px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="text" value="" autocomplete="off">
                             </td>
-                            <td align="left" class="width20p">
-                              <input  id="AuthorizationMemberID" style="margin-left: 40px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="text" value="" autocomplete="off">
-                             </td>
+                            <td align="left">
+                                <input type="date" style="margin-left: 40px; width: 155px; height: 25px;">
+                            </td>
                             <td align="left" class="width10p">
                               <input  id="AuthorizationMemberID" style="margin-left: 40px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="text" value="" autocomplete="off">
                             </td>
@@ -463,8 +462,8 @@
                                             </label>
                                         </td>
                                         <td align="left" class="width15p">
-                                          <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="text" value="" autocomplete="off">                                                                             
-                                            mmddyyyy
+                                          <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">                                                                             
+                                            
                                             <div id="messageStartDate" class="displayNone" style="color:red; font-weight: bold;">
                                             Proposed start date cannot be more than three months.
                                             </div>
@@ -476,8 +475,8 @@
                                             </label>
                                         </td>
                                         <td align="left" class="width15p">
-                                            <input id="AdmissionDate" name="AdmissionDate" tabindex="9" type="text" value="" autocomplete="off" disabled="">
-                                            mmddyyyy
+                                            <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">
+                                            
                                         </td>
                                         <td align="right" class="width17p">
                                             <label for="AdmissionDate">
@@ -485,8 +484,7 @@
                                             </label>
                                         </td>
                                         <td align="left" class="width15p">
-                                            <input   id="DischargeDate" name="DischargeDate" tabindex="10" type="text" value="" autocomplete="off" disabled="">
-                                            mmddyyyy
+                                            <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">
                                         </td>
                                     </tr>
                                     <tr>
@@ -551,9 +549,9 @@
                                 <input id="DiagnosisCodes_0__IsSelected" name="DiagnosisCodes[0].IsSelected" tabindex="-1" type="checkbox" value="true" autocomplete="off"><input name="DiagnosisCodes[0].IsSelected" type="hidden" value="false" autocomplete="off">                                                            </span>                                                        </td>
                         <td align="center" style="width: 15%">
                             <input class="width50 form-text" id="DiagnosisCodes_0__Code" maxlength="8" name="DiagnosisCodes[0].Code" tabindex="12" type="text" value="" autocomplete="off">                                                        </td>
-                        <td style="width: 5%">
+                        <td style="width: 5%" align="center">
                             <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
-                            <img src="./Service Request_Authorization Submission_files/icon_zoom.gif" alt="" width="20" class="vAlignMiddle">
+                            <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                             </a>
                         </td>
                         <td style="width: 70%">
@@ -568,11 +566,11 @@
                                 <input id="DiagnosisCodes_1__IsSelected" name="DiagnosisCodes[1].IsSelected" tabindex="-1" type="checkbox" value="true" autocomplete="off"><input name="DiagnosisCodes[1].IsSelected" type="hidden" value="false" autocomplete="off">                                                            </span>                                                        </td>
                         <td align="center" style="width: 15%">
                             <input class="width50 form-text" id="DiagnosisCodes_1__Code" maxlength="8" name="DiagnosisCodes[1].Code" tabindex="12" type="text" value="" autocomplete="off">                                                        </td>
-                        <td style="width: 5%">
-                            <a id="DiagnosisSearch1" tabindex="-1" href="javascript:void(0);">
-                            <img src="./Service Request_Authorization Submission_files/icon_zoom.gif" alt="" width="20" class="vAlignMiddle">
-                            </a>
-                        </td>
+                            <td style="width: 5%" align="center">
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                </a>
+                            </td>
                         <td style="width: 70%">
                             <input class="width100p brdNone form-text" id="DiagnosisCodes_1__Description" name="DiagnosisCodes[1].Description" readonly="readonly" tabindex="-1" type="text" value="" autocomplete="off">
                         </td>
@@ -585,11 +583,11 @@
                                 <input id="DiagnosisCodes_2__IsSelected" name="DiagnosisCodes[2].IsSelected" tabindex="-1" type="checkbox" value="true" autocomplete="off"><input name="DiagnosisCodes[2].IsSelected" type="hidden" value="false" autocomplete="off">                                                            </span>                                                        </td>
                         <td align="center" style="width: 15%">
                             <input class="width50 form-text" id="DiagnosisCodes_2__Code" maxlength="8" name="DiagnosisCodes[2].Code" tabindex="12" type="text" value="" autocomplete="off">                                                        </td>
-                        <td style="width: 5%">
-                            <a id="DiagnosisSearch2" tabindex="-1" href="javascript:void(0);">
-                            <img src="./Service Request_Authorization Submission_files/icon_zoom.gif" alt="" width="20" class="vAlignMiddle">
-                            </a>
-                        </td>
+                            <td style="width: 5%" align="center">
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                </a>
+                            </td>
                         <td style="width: 70%">
                             <input class="width100p brdNone form-text" id="DiagnosisCodes_2__Description" name="DiagnosisCodes[2].Description" readonly="readonly" tabindex="-1" type="text" value="" autocomplete="off">
                         </td>
@@ -680,9 +678,9 @@
                     <td align="center" style="width: 15%">
                         <input class="width50 form-text" id="ProcedureCodes_0__CodeID" maxlength="6" name="ProcedureCodes[0].CodeID" tabindex="12" type="text" value="" autocomplete="off">
                     </td>
-                    <td style="width: 5%">
-                        <a id="ProcedureSearch0" tabindex="-1" href="javascript:void(0);">
-                       
+                    <td style="width: 5%" align="center">
+                        <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                        <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                         </a>
                     </td>
                     <td style="width: 40%">
@@ -720,8 +718,10 @@
                     <td align="center" style="width: 15%">
                         <input class="width50 form-text" id="ProcedureCodes_1__CodeID" maxlength="6" name="ProcedureCodes[1].CodeID" tabindex="12" type="text" value="" autocomplete="off">
                     </td>
-                    <td style="width: 5%">
-                         </a>
+                    <td style="width: 5%" align="center">
+                        <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                        <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                        </a>
                     </td>
                     <td style="width: 40%">
                       <span>
@@ -758,7 +758,9 @@
                     <td align="center" style="width: 15%">
                         <input class="width50 form-text" id="ProcedureCodes_2__CodeID" maxlength="6" name="ProcedureCodes[2].CodeID" tabindex="12" type="text" value="" autocomplete="off">
                     </td>
-                    <td style="width: 5%">
+                    <td style="width: 5%" align="center">
+                        <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                        <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                         </a>
                     </td>
                     <td style="width: 40%">
@@ -921,7 +923,7 @@ line to remove.</i></span>
                               Accident Date :<span id="Requestor_AccidentDate_star" class="star" style="display: none;">*</span></label>
                       </td>
                       <td align="left" colspan="3">
-                          <input id="Requestor_AccidentDate" name="Requestor.AccidentDate" tabindex="17" type="text" value="" autocomplete="off" disabled="">&nbsp; mmddyyyy
+                        <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">&nbsp; 
                       </td>
                   </tr>
                   <tr>
@@ -939,9 +941,7 @@ line to remove.</i></span>
                           &nbsp;&nbsp;
                       </td>
                       <td align="left">
-                          <input  id="Requestor_LastMensuralDate" maxlength="10" name="Requestor.LastMensuralDate" tabindex="18" type="text" value="" autocomplete="off">
-                          
-                          mmddyyyy
+                        <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">
                       </td>
                       <td align="right" class="width22p" nowrap="nowrap">
                           <label for="Requestor_EstimatedDateOfDelivery" style="margin-left: 20px;">
@@ -949,8 +949,7 @@ line to remove.</i></span>
                           &nbsp;&nbsp;
                       </td>
                       <td align="left" colspan="3">
-                          <input id="Requestor_EstimatedDateOfDelivery" maxlength="10" name="Requestor.EstimatedDateOfDelivery" tabindex="19" type="text" value="" autocomplete="off">
-                          mmddyyyy
+                        <input  id="AuthorizationMemberID" style="margin-left: 0px;" name="AuthorizationMemberID" onblur="SearchMemberFromProv()" tabindex="1" type="date" value="" autocomplete="off">
                       </td>
                   </tr>
                   <tr>
