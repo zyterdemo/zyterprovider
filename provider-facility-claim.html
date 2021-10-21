@@ -210,27 +210,34 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                 <label style="width: 140px; text-align: center;">Type of Bill* </label><input type="text" >
                                 <label style="width: 140px; text-align: center;">Patient Control Number * </label><input type="text" >
                                 <label style="width: 140px; text-align: center;">Medical Record Number </label><input type="text">
+                                <label style="width: 180px; text-align: center;">Document Control Number</label><input type="text" >
                                 <br>
-                                <label style="width: 140px; text-align: center;">Document Control Number</label><input type="text" >
                                 <label style="width: 140px; text-align: center;">Revenue Code:* </label><input type="text"  >
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
                                 <label style="width: 140px; text-align: center;">Revenue Code Description: </label><input type="text">
-                                <br>
                                 <label style="width: 140px; text-align: center;">HCPCS/HIPPS Rate Codes/HCPCS Modifiers: </label><input type="text" >
                                 <label style="width: 140px; text-align: center;">NDC: </label><input type="text" >
+                                <br><br>
                                 <label style="width: 140px; text-align: center;">Service Date:*</label><input type="date" >
-                                <br>
                                 <label style="width: 140px; text-align: center;">Service Units:*</label><input type="text" >
                                 <label style="width: 140px; text-align: center;">Total Charges:*</label><input type="text" >
-                                <br>
+                                <label style="width: 140px; text-align: center;"> Non-Covered Charges:</label><input type="text" >
+                                <br><br>
+                                <a style="font: bolder; font-size:medium; width: 200px; text-align: center;">+ Add another Claim Line</a><br><br>
                                 <label style="width: 140px; text-align: center;">Assignment of Benefits *</label>
-                                <select style="width: 137px;">
+                                <select style="width: 350px; height: 25px;">
+                                    <option>Select</option>
                                     <option>Yes</option>
                                     <option>No</option>
                                     <option>Not Applicable</option>
                                 </select>
-                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <label style="width: 140px; text-align: center;">Release Of Information * </label>
-                                <select style="width: 137px;">
+                                <select style="width: 350px; height: 25px;">
+                                  <option>Select</option>
                                     <option>
                                         A-Appropriate Release of Information on File at Health Care Service Provider or at Utilization Review Organization
                                         </option>
@@ -250,9 +257,17 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                             Y-Yes, Provider has a Signed Statement Permitting Release of Medical Billing Data Related to a Claim
                                             </option>
                                 </select>
-                                <label style="width: 140px; text-align: center;">Treatment Authorization Code: </label><input type="text" >
+                                <br><br>
+                                <label style="width: 170px; text-align: center;">Treatment Authorization Code: </label><input type="text" >  &nbsp;&nbsp;
+                                 <label style="font-size: small; font: bolder; color: #000000;"> Add Another Authorization Code </label> <br><br>
+                                 <label style="font-size: medium;">
+                                   Diagnosis Code(s) (DX) and POA Indicators </label><br>
+                                 </label>
                                 <label style="width: 140px; text-align: center;">Principal DX: </label><input type="text">
-                                <br>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                
                                 <label style="width: 140px; text-align: center;"> POA: </label>
                                 <select style="width: 137px;">
                                     <option>Select</option>
@@ -262,8 +277,14 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/help-white-bg.jpg" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
                                 <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" >
-                                <label style="width: 140px; text-align: center;">POA: </label>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                <label style="width: 100px; text-align: center;">POA: </label>
                                 <select style="width: 140px;">
                                     <option>Select</option>
                                     <option>Exempt</option>
@@ -272,12 +293,87 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/help-white-bg.jpg" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
                                 <br>
+                                <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" >
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                <label style="width: 100px; text-align: center;">POA: </label>
+                                <select style="width: 140px;">
+                                    <option>Select</option>
+                                    <option>Exempt</option>
+                                    <option>N</option>
+                                    <option>U</option>
+                                    <option>W</option>
+                                    <option>Y</option>
+                                </select>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/help-white-bg.jpg" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                  <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" >
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                <label style="width: 100px; text-align: center;">POA: </label>
+                                <select style="width: 140px;">
+                                    <option>Select</option>
+                                    <option>Exempt</option>
+                                    <option>N</option>
+                                    <option>U</option>
+                                    <option>W</option>
+                                    <option>Y</option>
+                                </select>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/help-white-bg.jpg" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                  <br>
+                                  <label style="width: 140px; text-align: center;">Other DX: </label><input type="text" >
+                                  <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                    <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                   <label style="width: 100px; text-align: center;">POA: </label>
+                                  <select style="width: 140px;">
+                                      <option>Select</option>
+                                      <option>Exempt</option>
+                                      <option>N</option>
+                                      <option>U</option>
+                                      <option>W</option>
+                                      <option>Y</option>
+                                  </select>
+                                  <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                    <img src="./images/help-white-bg.jpg" alt=""  width="20" class="vAlignMiddle">
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                                    
+                                    <label style="font-size: small; font: bolder; color: #000000;"> Add Another Diagnosis Code </label>
+                                    <br> <br> <br>
                                 <label style="width: 140px; text-align: center;">Admit Diagnosis: </label><input type="text" >
-                                <label style="width: 140px; text-align: center;">Patient Reason For Visit Code:</label><input type="text" >
-                                <label style="width: 140px; text-align: center;">Prospective Payment System Code (PPS Code):</label><input type="text" >
-                                <br>
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                <label style="width: 200px; text-align: center;">Patient Reason For Visit Code:</label><input type="text" >
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
+                                  <label style="font-size: small; font: bolder; color: #000000;"> Add Another Patient Reason for Visit Code </label>
+                                  <br>
+                                <label style="width: 300px; text-align: center;">Prospective Payment System Code (PPS Code):</label><input type="text" >
+                                <br> <br>
+                                <label style="font-size: medium;">
+                                  External Cause of Injury (ECI) Code and POA Indicators </label><br>
+                                </label>
                                 <label style="width: 140px; text-align: center;">ECI:</label><input type="text" >
+                                <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                  <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                  </a>
                                 <label style="width: 140px; text-align: center;">POA </label>
                                 <select style="width: 137px;">
                                     <option>Select</option>
@@ -287,9 +383,18 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>W</option>
                                     <option>Y</option>
                                 </select>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <label style="font-size: small; font: bolder; color: #000000;"> Add Another ECI Code </label>
                                 <br>
                                 <label style="width: 140px; text-align: center;">Principal Procedure Date</label><input type="date" style="width: 150px;">
-  <label style="width: 140px; text-align: center;">Principal Procedure Code </label><input type="text">
+                                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                               <label style="width: 140px; text-align: center;">Principal Procedure Code </label><input type="text">
+                                    <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
+                                      <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <label style="font-size: small; font: bolder; color: #000000;"> Add Another Procedure Code </label>
+                                    <br>
                                 
                               
 
@@ -316,12 +421,13 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                               <div>
                                   <h5>Attending Physician</h5>
                                   <br>
-                                <label style="width: 140px; text-align: center;">NPI: </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">First Name:</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Last Name:</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Secondary ID Qualifier</label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Provider Secondary Identifier </label><input type="text" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Select Physician Type </label>
+                                <label style="width: 100px; text-align: center;">NPI: </label><input type="text" style="width: 100px;">
+                                <label style="width: 100px; text-align: center;">First Name:</label><input type="text" style="width: 100px;">
+                                <label style="width: 100px; text-align: center;">Last Name:</label><input type="text" style="width: 100px;">
+                                <label style="width: 140px; text-align: center;">Secondary ID Qualifier</label><input type="text" style="width: 100px;">
+                                <label style="width: 180px; text-align: center;">Provider Secondary Identifier </label><input type="text" style="width: 100px;">
+                                <br><br>
+                                <label style="width: 200px; font-size: medium; text-align: center;">Select Physician Type </label>
                                 <select style="width: 140px;" >
                                     <option>Select</option>
                                     <option>Operating Physician</option>
@@ -329,9 +435,14 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
                                     <option>Rendering Physician</option>
                                     <option>Referring Physician</option>
                                 </select>
-                              
-                               
-                                
+                              <br>
+                              <label style="width: 100px; text-align: center;">NPI: </label><input type="text" style="width: 100px;">
+                              <label style="width: 100px; text-align: center;">First Name:</label><input type="text" style="width: 100px;">
+                              <label style="width: 100px; text-align: center;">Last Name:</label><input type="text" style="width: 100px;">
+                              <label style="width: 140px; text-align: center;">Qualifier</label><input type="text" style="width: 100px;">
+                              <label style="width: 180px; text-align: center;">Provider Secondary Identifier </label><input type="text" style="width: 100px;">
+                              <br>
+                              <a style="font-size: small; padding-left: 1100px ; font: bolder; text-align: right; color: #000000;"> Add Another Physician </a>
                               <br></div>
                                
 
@@ -346,7 +457,7 @@ KPC PROMISE HOSPITAL OF PHOENIX LLC
     <h1>
        <span style="font-style: normal; font-size: medium;     color: #3E3E3E;
                           padding: 5px 15px;
-                          border-left: 4px solid #4193CE;">Comments</span></h1>
+                          border-left: 4px solid #4193CE;">Supporting Information</span></h1>
                           </div>
                           <label>Remarks</label>
                           <textarea style="width: 100%;"></textarea>

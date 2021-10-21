@@ -312,6 +312,12 @@ position: relative; margin: 0.5cm; padding: 0.5cm" >
                                 <label for="Middle" style="width: 210px; text-align: center;">Middle Initial:  </label> 
                                 <input type="text" id="Middle">
 
+                                &nbsp; &nbsp;&nbsp;
+
+                                <button style="display: inline-block; color: #fff; background-color: #007bff; border-color: #007bff; justify-content: center; align-items: center; background-repeat: no-repeat;">
+                                  <a type="button" href="./demo-page.html" style="color: white; text-decoration:  none;" >Advanced Search</a>
+                                 </button>
+
                                 <br>
                                 
                                 <label for="DOB" style="width: 210px;">DOB: </label> 
@@ -442,7 +448,7 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                                             <label style="width: 140px; text-align: center;">
                                                 Admission Date:* </label><input type="date" style="width: 140px;">
                                 <label style="width: 140px; text-align: center;">Admission Type:* </label>
-                                <select style="width: 137px;"><option>Select</option>
+                                <select style="width: 154px; height: 25px;"><option>Select</option>
                                     <option>Emergency</option>
                                     <option>Urgent</option>
                                     <option>Elective</option>
@@ -450,29 +456,55 @@ Are there any patient condition dates that need to be entered? (eg:Last menstrua
                                     <option>No Information Available</option>
                                 
                                 </select>
-                                <label style="width: 140px; text-align: center;">Admission Source:* </label><input type="text" style="width: 140px;" >
-                                <label style="width: 140px; text-align: center;">Admission Hour:*: </label><input type="text" style="width: 140px;" ><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label style="width: 150px; text-align: center;">Admission Source:* </label><input type="text" style="width: 140px;" ><br>
+                                <label style="width: 140px; text-align: center;">Admission Hour:*: </label><input type="text" style="width: 140px;">
+
+                                <label style="width: 140px; text-align: center;" for="Discharge Hour">
+                                  Discharge Hour:</label>
+                                  <span>
+                                    <input class="form-text-ub04 width30" id="dischargeHour" maxlength="2" name="dischargeHour" tabindex="38" type="text" value="" autocomplete="off">
+                                    (0 - 23)</span>
+
+                                    <label style="width: 140px; text-align: center;" for="Patient Status">
+                                      Status:</label><span class="star">*</span>
+                                      <input  id="PatientStatus" maxlength="2" name="PatientStatus" tabindex="39" type="text" value="" autocomplete="off">
+                    <a id="PatientStatusbutton" href="javascript:void(0);" tabindex="-1">
+                        <img height="20" src="./images/icon_zoom.gif" width="20" align="middle" alt="Search" border="0" class="vAlignMiddle"></a>
+                        <br>
+
+
                                 <label style="width: 140px; text-align: center;">Condition Code: </label><input type="text" style="width: 140px;">  
                                 <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
                                   <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                                   </a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a style="font: bolder; color: #000000;">Add Another Condition Code</a>
                                   <br>
                                 <label style="width: 140px; text-align: center;">Occurrence Codes: </label><input type="text" style="width: 140px;">
                                 <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
                                   <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                                   </a>
-                                <label style="width: 140px; text-align: center;">Occurrence Date: </label><input type="date" style="width: 140px;"><br>
+                                <label style="width: 140px; text-align: center;">Occurrence Date: </label><input type="date" style="width: 140px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label><a style="font: bolder; color: #000000;">Add Another Occurrence Code</a></label>
+                                <br>
                                 <label style="width: 140px; text-align: center;">Occurrence Span Codes: </label><input type="text" style="width: 140px;">
                                  <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
                                   <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                                   </a>
                                 <label style="width: 140px; text-align: center;">Occurrence Span From: </label><input type="date" style="width: 140px;">
-                                <label style="width: 140px; text-align: center;">Occurrence Span To:</label><input type="date" style="width: 140px;"><br>
+                                <label style="width: 140px; text-align: center;">Occurrence Span To:</label><input type="date" style="width: 140px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a style="font: bolder; color: #000000;">Add Another Occurrence Span Code</a>
+                                <br>
                                 <label style="width: 140px; text-align: center;">Value Code: </label><input type="text" style="width: 140px;">
                                 <a id="DiagnosisSearch0" tabindex="-1" href="javascript:void(0);">
                                   <img src="./images/icon_zoom.gif" alt=""  width="20" class="vAlignMiddle">
                                   </a>
                                 <label style="width: 140px; text-align: center;">Amount($): </label><input type="text" style="width: 140px;">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a style="font: bolder; color: #000000;">Add Another Value Code</a>
                                             
                            
                         </div>
